@@ -2,7 +2,9 @@ import './header.css'
 
 function Header() {
     return (
-      <div className='Header-title'>Header</div>
+      <div className='Header'>
+        <h1 className='Header-title'>Header</h1>
+      </div>
     );
   }
   

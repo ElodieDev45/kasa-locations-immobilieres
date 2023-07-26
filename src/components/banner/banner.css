@@ -1,0 +1,13 @@
+.Banner {
+    background-color: #46a99e;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Banner-title {
+    font-size: 1.3em;
+    color: white;
+  }

@@ -1,0 +1,13 @@
+.Footer {
+  background-color: #475b83;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer-title {
+  font-size: 1.5em;
+  color: white;
+}
