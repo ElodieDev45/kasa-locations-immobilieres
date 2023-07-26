@@ -2,7 +2,7 @@
     background-color: #46a99e;
     min-height: 10vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
   }
@@ -10,4 +10,12 @@
   .Banner-title {
     font-size: 1.3em;
     color: white;
+  }
+
+  .Banner-img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
   }
