@@ -1,4 +1,5 @@
 import logo from '../assets/logo.svg';
+import '../styles/Header.css';
 
 function Header() {
     const title=`KASA - Locations Immobilières`
