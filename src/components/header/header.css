@@ -1,14 +1,32 @@
   .Header {
-    background-color: #282c34;
     min-height: 10vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   
-  .Header-title {
-    font-size: 2em;
-    color: white;
+  .Header-logo {
+    width: 30%;
   }
+
+  .Header-nav {
+    width: 35%;
+    font-size: 1.2em;
+    color: #FF6060;
+  }
+  
+  .Header-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2em;
+  }
+
+  .Header-nav a {
+    text-decoration: none;
+    color: #FF6060;
+  }
+
   
