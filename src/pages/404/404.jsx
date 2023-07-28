@@ -4,7 +4,7 @@ import Footer from '../../components/footer/footer'
 
 function Error404() {
     return(
-        <div>
+        <div id="404">
             404
             <Header />
             <Footer />

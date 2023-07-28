@@ -6,7 +6,7 @@ import Banner from '../../components/banner/banner'
 
 function About() {
     return(
-        <div>
+        <div id="About">
             About
             <Header />
             <Banner />
