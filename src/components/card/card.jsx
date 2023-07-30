@@ -1,18 +1,15 @@
 import './card.css'
 import LogementsCard from './logements';
-import {logements} from '../../datas/logements2'
-// import data from '../../datas/logements.json'
-// import LogementsCard from './logements.jsx';
+import logements from '../../datas/logements.json'
 
 
 function Card() {
-
     return (
       <div className='Cards'>
-        <ul className='Card'>
+        <ul>
           {logements.map(({id, title, cover}) => (
             <LogementsCard
-              id={id}
+              // id={id}
               title={title}
               cover={cover}
             />
