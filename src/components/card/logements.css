@@ -1,19 +1,35 @@
 .LogementsCard {
-    background-color: aqua;
-	width: 30%;
-    display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	text-transform: capitalize;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*pour flex au lieux de grid*/
+    /* width: 30%;
+    height: 30vw; */
 }
-.LogementsCard-cover {
-	width: 100%;	
-	border-radius: 20px;
+.LogementsCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
 }
 
-.LogementsCard h3 {
-	color: white;
-	position: absolute;
-	width: 40vh;
+.LogementsCard-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.LogementsCard h3{
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 0 2vw 2vw 2vw;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
 }

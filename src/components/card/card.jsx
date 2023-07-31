@@ -1,6 +1,7 @@
 import './card.css'
-import LogementsCard from './logements';
+import './logements.css'
 import logements from '../../datas/logements.json'
+import LogementsCard from './logements';
 
 
 function Card() {
@@ -9,7 +10,7 @@ function Card() {
         <ul>
           {logements.map(({id, title, cover}) => (
             <LogementsCard
-              // id={id}
+              key={id}
               title={title}
               cover={cover}
             />

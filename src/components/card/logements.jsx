@@ -7,8 +7,8 @@ function handleClick(logementTitle) {
 function LogementsCard({id, title, cover}) {    
     return (
         <li key={id} className='LogementsCard' onClick={() => handleClick(title)}>
-            <img className='LogementsCard-cover' src={cover} alt={`${title} cover`} />
             <h3>{title}</h3>
+            <img className='LogementsCard-cover' src={cover} alt={`${title} cover`} />
         </li>
     )
 }

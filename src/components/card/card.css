@@ -1,9 +1,22 @@
 .Cards {
-    background-color: rgba(128, 128, 128, 0.45);
-    width: 100%;
+    margin: 5%;
+    padding: 4vw ;
+    background-color: #F6F6F6;
 }
-  
-.Card {
-    display: flex;
+
+.Cards ul{
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 25vw;
+    grid-gap: 3vw;
+    justify-content: space-between;
+    /*pour Flex au lieux de Grid*/
+    /* width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    gap: 2vw; */
 }
