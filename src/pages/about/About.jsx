@@ -2,7 +2,7 @@ import './About.css'
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import Banner from '../../components/banner/banner'
-import imgAbout from '../../components/assets/about.png'
+import imgAbout from '../../components/assets/banner-about.png'
 
 
 function About() {
