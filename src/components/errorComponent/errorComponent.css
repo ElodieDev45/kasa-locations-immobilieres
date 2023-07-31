@@ -1,0 +1,21 @@
+.error-component a {
+    color: #FF6060;
+    font-size: 1.5em;
+}
+
+.error-body{
+    margin-bottom: 14vw;
+}
+
+.error-body img{
+    width: 42vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.error-body h2{
+    font-size: 3em;
+    font-weight: 500;
+}
+
