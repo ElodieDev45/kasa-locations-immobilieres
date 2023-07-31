@@ -4,3 +4,28 @@
     align-content: center;
     margin: 0 auto;
 }
+.Cards {
+    margin: 5%;
+    padding: 4vw ;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+}
+
+.Cards ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    /*pour Grids au lieux de Flex*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 24vw;
+    grid-gap: 3vw;
+    /*pour Flex au lieux de Grid*/
+    /* width: 100%;
+    display: flex;
+    justify-content: space-evenly ;
+    flex-wrap: wrap;
+    gap: 3vw;
+    column-gap: 4%; */
+}

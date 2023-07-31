@@ -1,34 +1,26 @@
 import './card.css'
-import './logements.css'
-import logements from '../../datas/logements.json'
-import LogementsCard from './logements';
 
+function handleClick(logementTitle) {
+  alert(`Vous souhaitez regarder le logement ${logementTitle} ? Très bon choix ✨`);
+}
 
-function Card() {
+function Card({idCard, titleCard, coverCard}) {
     return (
-      <main className='Cards'>
-        <ul>
-          {logements.map(({id, title, cover}) => (
-            <LogementsCard
-              key={id}
-              title={title}
-              cover={cover}
-            />
-          ))}
-        </ul>
-      </main>
+      <li 
+        key={idCard}
+        className='Card'
+        onClick={() => handleClick(titleCard)}
+      >
+        <h3>
+          {titleCard}
+        </h3>
+        <img 
+          className='Card-cover'
+          src={coverCard}
+          alt={`${titleCard}-cover`}
+        />
+      </li>
     );
   }
   
 export default Card;
-
-
-// function Card() {
-//     return (
-//       <div className='Card'>
-//         <h2 className='Card-title'>{LogementsCard}</h2>
-//       </div>
-//     );
-//   }
-  
-// export default Card;

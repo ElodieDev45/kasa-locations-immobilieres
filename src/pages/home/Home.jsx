@@ -4,6 +4,8 @@ import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
 import Footer from '../../components/footer/footer'
 import imgBanner from '../../assets/banner-home.png'
+import logements from '../../datas/logements.json'
+
 
 function Home() {
     return(
@@ -16,7 +18,17 @@ function Home() {
                     title={'Chez vous, partout et ailleurs'}
                 />
             </section>
-            <Card />
+            <main className='Cards'>
+                <ul>
+                    {logements.map(({id, title, cover}) => (
+                    <Card 
+                        idCard={id}
+                        titleCard={title}
+                        coverCard={cover}
+                    />
+                    ))}
+                    </ul>
+            </main>
             <Footer />
         </div>
     )
