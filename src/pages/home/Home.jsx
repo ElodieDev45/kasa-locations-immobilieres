@@ -3,7 +3,7 @@ import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
 import Footer from '../../components/footer/footer'
-import imgBanner from '../../components/assets/banner-home.png'
+import imgBanner from '../../assets/banner-home.png'
 
 function Home() {
     return(

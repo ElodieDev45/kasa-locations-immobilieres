@@ -1,4 +1,4 @@
-import logo from '../assets/logo-blanc.png'
+import logo from '../../assets/logo-blanc.png'
 import './footer.css'
 
 
