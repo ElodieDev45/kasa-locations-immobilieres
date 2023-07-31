@@ -1,10 +1,15 @@
 .LogementsCard {
     position: relative;
+    /*pour Grids au lieux de Flex*/
     width: 100%;
+    max-width: 340px;
     height: 100%;
+    max-height: 340px;
     /*pour flex au lieux de grid*/
-    /* width: 30%;
-    height: 30vw; */
+    /* width: 24vw;
+    max-width: 340px;
+    height: 24vw;
+    max-height: 340px; */
 }
 .LogementsCard::before {
     content: "";

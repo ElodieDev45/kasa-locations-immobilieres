@@ -9,15 +9,17 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
+    /*pour Grids au lieux de Flex*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 25vw;
+    grid-auto-rows: 24vw;
     grid-gap: 3vw;
-    justify-content: space-between;
     /*pour Flex au lieux de Grid*/
     /* width: 100%;
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-evenly ;
     flex-wrap: wrap;
-    gap: 2vw; */
+    gap: 3vw;
+    column-gap: 4%; */
 }
