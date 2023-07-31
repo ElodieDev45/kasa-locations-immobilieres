@@ -6,7 +6,7 @@ import LogementsCard from './logements';
 
 function Card() {
     return (
-      <div className='Cards'>
+      <main className='Cards'>
         <ul>
           {logements.map(({id, title, cover}) => (
             <LogementsCard
@@ -16,7 +16,7 @@ function Card() {
             />
           ))}
         </ul>
-      </div>
+      </main>
     );
   }
   
