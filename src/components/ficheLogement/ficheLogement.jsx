@@ -4,18 +4,37 @@ import Tags from "../tags/tags"
 import Host from "../host/host"
 import Rate from "../rate/rate"
 
-function FicheLogement() {
+
+function FicheLogement({idCard, title, pictures, description, hostName, hostPicture, rating, location, equipements, tags}) {
     <main>
         <div>
-            <Carrousel />
+            <Carrousel 
+                title={title}
+                pictures={pictures}
+            />
             <section>
-                <h2>titre</h2>
-                <p>location</p>
+                <h2>{title}</h2>
+                <p>{location}</p>
             </section>
-            <Host />
-            <Rate />
+            <aside>
+                <Host 
+                    idCard={idCard}
+                    name={hostName}
+                    picture={hostPicture}
+                />
+            </aside>
+            <Rate 
+                rating={rating}
+            />
             <Tags />
-            <Dropdown />
+            <Dropdown 
+                title='Description'
+                content={description}
+            />
+            <Dropdown
+                title='Equipements'
+                content={equipements}
+            />
         </div>
     </main>
 }
