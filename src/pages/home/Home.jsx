@@ -27,7 +27,7 @@ function Home() {
                         coverCard={cover}
                     />
                     ))}
-                    </ul>
+                </ul>
             </main>
             <Footer />
         </div>
