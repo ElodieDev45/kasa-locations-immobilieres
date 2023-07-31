@@ -7,9 +7,8 @@ import Footer from '../../components/footer/footer'
 function Home() {
     return(
         <div id="Home">
-            Home
             <Header />
-            <Banner />
+            <div className='Home-Banner'><h1>Chez vous, partout et ailleurs</h1><Banner /></div>
             <Card />
             <Footer />
         </div>
