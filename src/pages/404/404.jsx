@@ -1,12 +1,20 @@
 import './404.css'
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
+import ErrorComponent from '../../components/errorComponent/errorComponent'
+import imgError404 from '../../assets/error404.png'
 
 function Error404() {
     return(
         <div id="error404">
-            404
             <Header />
+            <main className='main-error'>
+                <ErrorComponent 
+                    errorImg={imgError404}
+                    altImg={"code d'erreur 404"}
+                    errorText={"Oups! La page que vous demandez n'existe pas"}
+                />
+            </main>
             <Footer />
         </div>
     )

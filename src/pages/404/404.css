@@ -2,3 +2,9 @@
     max-width: 1440px;
     align-content: center;
 }
+
+.main-error {
+    margin: 12vw auto;
+    color: #FF6060;
+    text-align: center;
+}
