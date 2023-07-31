@@ -2,13 +2,17 @@ import './About.css'
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import Banner from '../../components/banner/banner'
+import imgAbout from '../../components/assets/about.png'
 
 
 function About() {
     return(
         <div id="About">
             <Header />
-            <Banner />
+            <Banner 
+                img={imgAbout}
+                alt={'paysage de montagne et rivière'}
+            />
             <Footer />
         </div>
     )

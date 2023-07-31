@@ -3,12 +3,19 @@ import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
 import Footer from '../../components/footer/footer'
+import imgBanner from '../../components/assets/banner.png'
 
 function Home() {
     return(
         <div id="Home">
             <Header />
-            <div className='Home-Banner'><h1>Chez vous, partout et ailleurs</h1><Banner /></div>
+            <section className='Home-Banner'>
+                <Banner 
+                    img={imgBanner}
+                    alt={'paysage de falaise'}
+                    title={'Chez vous, partout et ailleurs'}
+                />
+            </section>
             <Card />
             <Footer />
         </div>
