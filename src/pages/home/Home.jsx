@@ -23,7 +23,7 @@ function Home() {
                     {logements.map(({id, title, cover}) => (
                         <a href={'http://localhost:3000/Details?id='+ id}>
                         <Card 
-                            idCard={id}
+                            id={id}
                             titleCard={title}
                             coverCard={cover}
                         />

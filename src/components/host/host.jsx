@@ -1,7 +1,7 @@
-function Host({idCard, name, picture}){
+function Host({id, name, picture}){
     return(
         <div 
-            key={idCard}
+            key={id}
             className="Host"
         >
             <h3>

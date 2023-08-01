@@ -5,38 +5,47 @@ import Host from "../host/host"
 import Rate from "../rate/rate"
 
 
-function FicheLogement({idCard, title, pictures, description, hostName, hostPicture, rating, location, equipements, tags}) {
-    <main>
-        <div>
-            <Carrousel 
-                title={title}
-                pictures={pictures}
-            />
-            <section>
-                <h2>{title}</h2>
-                <p>{location}</p>
-            </section>
-            <aside>
-                <Host 
-                    idCard={idCard}
-                    name={hostName}
-                    picture={hostPicture}
+function FicheLogement({id, title, pictures, description, hostName, hostPicture, rating, location, equipments, tags}) {
+    return (
+        <main>
+            <div>
+                <Carrousel
+                    id={id} 
+                    title={title}
+                    pictures={pictures}
                 />
-            </aside>
-            <Rate 
-                rating={rating}
-            />
-            <Tags />
-            <Dropdown 
-                title='Description'
-                content={description}
-            />
-            <Dropdown
-                title='Equipements'
-                content={equipements}
-            />
-        </div>
-    </main>
+                <section>
+                    <h2 id={id} >{title}</h2>
+                    <p id={id} >{location}</p>
+                </section>
+                <aside>
+                    <Host
+                        id={id}
+                        name={hostName}
+                        picture={hostPicture}
+                    />
+                </aside>
+                <Rate
+                    id={id} 
+                    rating={rating}
+                />
+                <Tags
+                    id={id} 
+                    tags={tags}            
+                />
+                <Dropdown
+                    id={id} 
+                    title='Description'
+                    content={description}
+                />
+                <Dropdown
+                    id={id}
+                    title='Equipements'
+                    content={equipments}
+                />
+            </div>
+        </main>
+    )
 }
 
 export default FicheLogement 
