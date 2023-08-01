@@ -1,9 +1,11 @@
-function Tags({id, tags}) {
+function Tags({datasid, tags}) {
     return (
-        <ul key={id} className="tags">
-            <li className="tag">
-                {tags}
-            </li>
+        <ul key={datasid} className="tags">
+            {tags.map((tag, index) =>(
+                <li className="tag" key={index}>
+                    {tag}
+                </li>
+            ))}
         </ul>
     )
 }
