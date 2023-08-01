@@ -1,15 +1,10 @@
 import './card.css'
 
-function handleClick(logementTitle) {
-  alert(`Vous souhaitez regarder le logement ${logementTitle} ? Très bon choix ✨`);
-}
-
 function Card({idCard, titleCard, coverCard}) {
     return (
       <li 
         key={idCard}
         className='Card'
-        onClick={() => handleClick(titleCard)}
       >
         <h3>
           {titleCard}
