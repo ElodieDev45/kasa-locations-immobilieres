@@ -1,6 +1,6 @@
-function Rate({id, rating}){
+function Rate({datasid, rating}){
     return (
-        <div key={id}>
+        <div key={datasid}>
             {rating}
         </div>
     )

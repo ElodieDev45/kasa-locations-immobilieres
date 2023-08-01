@@ -17,12 +17,12 @@ function Details() {
             <Header />
             <main>
                 <FicheLogement 
-                    id={logementInfos.id}
+                    datasid={logementInfos.id}
                     title={logementInfos.title}
                     pictures={logementInfos.pictures}
                     description={logementInfos.description}
-                    hostName={logementInfos.hostName}
-                    hostPicture={logementInfos.hostPicture}
+                    hostName={logementInfos.host.name}
+                    hostPicture={logementInfos.host.picture}
                     rating={logementInfos.rating}
                     location={logementInfos.location}
                     equipments={logementInfos.equipments}

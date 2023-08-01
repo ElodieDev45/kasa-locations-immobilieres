@@ -21,9 +21,9 @@ function Home() {
             <main className='Cards'>
                 <ul>
                     {logements.map(({id, title, cover}) => (
-                        <a href={'http://localhost:3000/Details?id='+ id}>
+                        <a href={'http://localhost:3000/Details?id='+ id} key={id}>
                         <Card 
-                            id={id}
+                            datasid={id}
                             titleCard={title}
                             coverCard={cover}
                         />

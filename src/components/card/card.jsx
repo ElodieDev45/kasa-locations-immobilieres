@@ -1,9 +1,9 @@
 import './card.css'
 
-function Card({id, titleCard, coverCard}) {
+function Card({datasid, titleCard, coverCard}) {
     return (
       <li 
-        key={id}
+        key={datasid}
         className='Card'
       >
         <h3>

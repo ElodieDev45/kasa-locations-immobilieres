@@ -5,44 +5,46 @@ import Host from "../host/host"
 import Rate from "../rate/rate"
 
 
-function FicheLogement({id, title, pictures, description, hostName, hostPicture, rating, location, equipments, tags}) {
+function FicheLogement({datasid, title, pictures, description, hostName, hostPicture, rating, location, equipments, tags}) {
     return (
         <main>
             <div>
                 <Carrousel
-                    id={id} 
+                    datasid={datasid} 
                     title={title}
                     pictures={pictures}
                 />
                 <section>
-                    <h2 id={id} >{title}</h2>
-                    <p id={id} >{location}</p>
+                    <h2 datasid={datasid} >{title}</h2>
+                    <p datasid={datasid} >{location}</p>
                 </section>
                 <aside>
                     <Host
-                        id={id}
+                        datasid={datasid}
                         name={hostName}
                         picture={hostPicture}
                     />
                 </aside>
                 <Rate
-                    id={id} 
+                    datasid={datasid} 
                     rating={rating}
                 />
                 <Tags
-                    id={id} 
+                    datasid={datasid} 
                     tags={tags}            
                 />
-                <Dropdown
-                    id={id} 
-                    title='Description'
-                    content={description}
-                />
-                <Dropdown
-                    id={id}
-                    title='Equipements'
-                    content={equipments}
-                />
+                <div>
+                    <Dropdown
+                        datasid={datasid} 
+                        title='Description'
+                        content={description}
+                    />
+                    <Dropdown
+                        datasid={datasid}
+                        title='Equipements'
+                        content={equipments}
+                    />
+                </div>
             </div>
         </main>
     )
