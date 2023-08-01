@@ -29,3 +29,7 @@
     gap: 3vw;
     column-gap: 4%; */
 }
+
+.Cards ul a {
+    margin: 0;
+}

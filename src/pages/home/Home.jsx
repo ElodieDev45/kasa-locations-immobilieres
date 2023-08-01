@@ -21,11 +21,13 @@ function Home() {
             <main className='Cards'>
                 <ul>
                     {logements.map(({id, title, cover}) => (
-                    <Card 
-                        idCard={id}
-                        titleCard={title}
-                        coverCard={cover}
-                    />
+                        <a href={'http://localhost:3000/Details?id='+ id}>
+                        <Card 
+                            idCard={id}
+                            titleCard={title}
+                            coverCard={cover}
+                        />
+                        </a>
                     ))}
                 </ul>
             </main>
