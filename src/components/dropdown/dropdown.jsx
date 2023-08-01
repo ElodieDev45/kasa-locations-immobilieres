@@ -1,10 +1,26 @@
 import '../dropdown/dropdown.css'
 
-function Dropdown({id, title, content}) {
+function Dropdown({datasid, title, content}) {
     return (
-        <article key={id}>
-            <h2>{title}</h2>
-            <p>{content}</p>
+        <article key={datasid} className='dropdown' id={title}>
+            <button type="button" className='dropdown-button'>
+                {title}
+                <p>↕️</p>
+            </button>
+            <div className='dropdown-content'>
+                {Array.isArray(content) ? (
+                    <ul>
+                        {content.map((equipment, index) =>(
+                            <li key={index} className='dropdown-equipment'>
+                                {equipment}
+                            </li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p className='dropdown-equipment'>{content}</p>
+                )
+                }           
+            </div>
         </article>
     )
 }
