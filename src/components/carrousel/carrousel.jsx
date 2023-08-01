@@ -1,10 +1,16 @@
-function Carrousel({title, pictures}) {
+function Carrousel({datasid, title, pictures}) {
     return (
-        <img
-            key={pictures} 
-            src={pictures}
-            alt={`aperçu du logement ${title}`}
-        />
+        <div className="carroussel" key={datasid}>
+            <figure>
+                {pictures.map((picture, index) =>(
+                    <img
+                        key={index} 
+                        src={picture}
+                        alt={`aperçu du logement ${title}`}
+                    />
+                ))}
+            </figure>
+        </div>
     )
 }
 
