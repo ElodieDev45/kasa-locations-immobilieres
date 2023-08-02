@@ -8,12 +8,18 @@ import imgAbout from '../../assets/banner-about.png'
 function About() {
     return(
         <div id="About">
-            <Header />
-            <Banner 
-                img={imgAbout}
-                alt={'paysage de montagne et rivière'}
-            />
-            <Footer />
+            <header>
+                <Header />
+            </header>
+            <section className='About-banner'>
+                <Banner 
+                    img={imgAbout}
+                    alt={'paysage de montagne et rivière'}
+                />
+            </section>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }

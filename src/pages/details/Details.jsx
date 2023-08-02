@@ -14,7 +14,9 @@ function Details() {
     
     return(
         <div id="Details">
-            <Header />
+            <header>
+                <Header />
+            </header>
             <main>
                 <FicheLogement 
                     datasid={logementInfos.id}
@@ -29,7 +31,9 @@ function Details() {
                     tags={logementInfos.tags}
                 />
             </main>
-            <Footer />
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }

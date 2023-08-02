@@ -7,7 +7,9 @@ import imgError404 from '../../assets/error404.png'
 function Error404() {
     return(
         <div id="error404">
-            <Header />
+            <header>
+                <Header />
+            </header>
             <main className='main-error'>
                 <ErrorComponent 
                     errorImg={imgError404}
@@ -15,7 +17,9 @@ function Error404() {
                     errorText={"Oups! La page que vous demandez n'existe pas"}
                 />
             </main>
-            <Footer />
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }

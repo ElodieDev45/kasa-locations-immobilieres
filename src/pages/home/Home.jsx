@@ -10,8 +10,10 @@ import logements from '../../datas/logements.json'
 function Home() {
     return(
         <div id="Home">
-            <Header />
-            <section className='Home-Banner'>
+            <header>
+                <Header />
+            </header>
+            <section className='Home-banner'>
                 <Banner 
                     img={imgBanner}
                     alt={'paysage de falaise'}
@@ -22,16 +24,18 @@ function Home() {
                 <ul>
                     {logements.map(({id, title, cover}) => (
                         <a href={'http://localhost:3000/Details?id='+ id} key={id}>
-                        <Card 
-                            datasid={id}
-                            titleCard={title}
-                            coverCard={cover}
-                        />
+                            <Card 
+                                datasid={id}
+                                titleCard={title}
+                                coverCard={cover}
+                            />
                         </a>
                     ))}
                 </ul>
             </main>
-            <Footer />
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }
