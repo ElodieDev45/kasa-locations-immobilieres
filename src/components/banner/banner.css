@@ -1,6 +1,6 @@
 .Banner {
   position: relative;
-  margin: 4vw 5%;
+  margin: 4vw 0;
   height: 18vw;
   display: flex;
   flex-direction: row-reverse;
@@ -28,10 +28,10 @@
 .Banner h1{
   position: absolute;
   margin: 0 5%;
-  font-size: 4.4vw;
+  font-size: 3.4vw;
   font-weight: 500;
   width: 100%;
-  bottom: 6vw;
+  bottom: 7vw;
   margin: 0;
   z-index: 1;
   text-align: center;
