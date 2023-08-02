@@ -1,11 +1,16 @@
-figure {
+.carrousel {
+    height: 100%;
+}
+
+.carrousel figure {
     display: flex;
     align-items: center;
     width: 100%;
+    height: 100%;
     margin: 0;
 }
 
-figure #previous {
+.carrousel figure #previous {
     background-color: transparent;
     padding: 0;
     border: none;
@@ -14,17 +19,17 @@ figure #previous {
     left: 10vw;
 } 
 
-figure .pctLogement {
+.carrousel figure .pctLogement {
     position: relative;
     width: 100%;
-    height: 28vw;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
 }
 
-figure #next {
-    background-color: #FF6060;
+.carrousel figure #next {
+    background-color: transparent;
     padding: 0;
     border: none;
     position: absolute;
@@ -32,10 +37,10 @@ figure #next {
     right: 10vw;
 }
 
-figure .scrollPrevious {
+.carrousel figure .scrollPrevious {
     height: 6vw;
 }
 
-figure .scrollNext {
+.carrousel figure .scrollNext {
     height: 6vw;
 }

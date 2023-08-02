@@ -18,7 +18,7 @@ function Carrousel({datasid, title, pictures}) {
     };
 
     return (
-        <div className="carroussel" key={datasid}>
+        <div className="carrousel" key={datasid}>
             <figure>
                 <button onClick={handlePrevious} id='previous' ><img src={previous} className='scrollPrevious' alt='flèche précédent'/></button>
                     <img
