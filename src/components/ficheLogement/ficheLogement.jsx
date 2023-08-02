@@ -10,14 +10,16 @@ import Rate from "../rate/rate"
 function FicheLogement({datasid, title, pictures, description, hostName, hostPicture, rating, location, equipments, tags}) {
     return (
         <section className="ficheLogement">
-            <Carrousel
-                datasid={datasid} 
-                title={title}
-                pictures={pictures}
-            />
+            <div className='ficheLogement-carrousel'>
+                <Carrousel
+                    datasid={datasid} 
+                    title={title}
+                    pictures={pictures}
+                />
+            </div>
             <div className='ficheLogement-nh'>
                 <div className="ficheLogement-name">
-                    <h2 datasid={datasid} >{title}</h2>
+                    <h1 datasid={datasid} >{title}</h1>
                     <p datasid={datasid} >{location}</p>
                 </div>
                 <aside className="ficheLogement-host">
@@ -29,26 +31,34 @@ function FicheLogement({datasid, title, pictures, description, hostName, hostPic
                 </aside>
             </div>
             <div className='ficheLogement-tr'>
-                <Tags
+                <div className='ficheLogement-tags'>
+                    <Tags
                     datasid={datasid} 
                     tags={tags}            
-                />
-                <Rate
-                    datasid={datasid} 
-                    rating={rating}
-                />
+                    />
+                </div>
+                <div className='ficheLogement-rate'>
+                    <Rate
+                        datasid={datasid} 
+                        rating={rating}
+                    />
+                </div>
             </div>
             <div className="ficheLogement-details">
-                <Dropdown
-                    datasid={datasid} 
-                    title='Description'
-                    content={description}
-                />
-                <Dropdown
-                    datasid={datasid}
-                    title='Equipements'
-                    content={equipments}
-                />
+                <article className='ficheLogement-dropdown un'>
+                    <Dropdown
+                        datasid={datasid} 
+                        title='Description'
+                        content={description}
+                    />
+                </article>
+                <article className='ficheLogement-dropdown deux'>
+                    <Dropdown
+                        datasid={datasid}
+                        title='Equipements'
+                        content={equipments}
+                    />
+                </article>
             </div>
         </section>
     )
