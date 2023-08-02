@@ -1,0 +1,35 @@
+.ficheLogement {
+    background-color: rgb(226, 226, 226); 
+}
+
+.ficheLogement-nh {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ficheLogement-name {
+    color: #FF6060;
+    width: 85%;
+}
+
+.ficheLogement-host {
+    width: 15%;
+}
+
+.ficheLogement-name h2{
+    margin: 0;
+    width: 60%;
+    font-size: 2.5vw;
+}
+
+.ficheLogement-name p {
+    font-size: 1.3vw;
+}
+
+.ficheLogement-tr {
+    display: flex;
+    justify-content: space-between;
+}
+
