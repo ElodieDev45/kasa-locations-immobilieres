@@ -1,0 +1,28 @@
+.Host {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+    color: #FF6060;
+}
+
+.Host-name {
+    margin: 0;
+    overflow-wrap : break-word;
+    white-space : pre-line;
+    text-align: right;
+    width: 64%;
+    font-size: 1.3vw;
+}
+
+.Host-img {
+    margin: 0;
+    width: 36%;
+}
+
+.Host-img img {
+    margin: 0;
+    width: 100%;
+    border-radius: 50%;
+}

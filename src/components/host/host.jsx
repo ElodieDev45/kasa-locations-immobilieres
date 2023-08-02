@@ -1,17 +1,20 @@
+import '../host/host.css'
+
 function Host({datasid, name, picture}){
     return(
         <div 
             key={datasid}
             className="Host"
         >
-            <h3>
+            <h3 className='Host-name'>
                 {name}
             </h3>
-            <img 
-                src={picture}
-                alt={`profil de ${name}`}
-                className="Host-img"
-            />
+            <div className='Host-img'>
+                <img 
+                    src={picture}
+                    alt={`profil de ${name}`}
+                />
+            </div>
         </div>
     )
 }
