@@ -1,9 +1,9 @@
 #Home{
     max-width: 1440px;
-    /* width: 100%; */
     align-content: center;
     margin: 0 auto;
 }
+
 .Cards {
     margin: 5%;
     padding: 4vw ;
