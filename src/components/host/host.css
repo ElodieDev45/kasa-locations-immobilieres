@@ -1,28 +1,35 @@
 .Host {
+    color: #FF6060;
     margin: 0;
     display: flex;
+    justify-content: right;
     align-items: center;
     gap: 1vw;
     width: 100%;
-    color: #FF6060;
+    height: 100%;
 }
 
 .Host-name {
     margin: 0;
+    padding: 0;
     overflow-wrap : break-word;
     white-space : pre-line;
     text-align: right;
-    width: 64%;
+    width: 50%;
     font-size: 1.3vw;
 }
 
 .Host-img {
     margin: 0;
-    width: 36%;
+    padding: 0;
 }
 
 .Host-img img {
     margin: 0;
-    width: 100%;
+    padding: 0;
+    width: 4.5vw;
+    min-width: 4.5vw;
+    height: 4.5vw;
+    min-height: 4.5vw;
     border-radius: 50%;
 }
