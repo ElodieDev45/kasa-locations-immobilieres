@@ -1,0 +1,24 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1vw;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #FF6060;
+    padding: 0 1vw;
+    margin: 0;
+    min-width: 6vw;
+    text-align: center;
+    border-radius: 10px;
+}
