@@ -12,8 +12,8 @@ function Dropdown({datasid, title, content}) {
                 <div className='dropdown-menu'>
                     <h2>{title}</h2>
                     <div className={`dropdown-menuImg ${isOpen ? 'active' : ''}`}>
-                        <img src={foldImg} alt='fleche pour ouvrir' className={`dropdown-img one ${isOpen ? 'active' : ''}`}/>
-                        <img src={unfoldImg} alt='flèche pour fermer' className={`dropdown-img two ${isOpen ? 'active' : ''}`}/>
+                        <img src={unfoldImg} alt='fleche ouverture' className={`dropdown-img one ${isOpen ? 'active' : ''}`}/>
+                        <img src={foldImg} alt='flèche fermeture' className={`dropdown-img two ${isOpen ? 'active' : ''}`}/>
                     </div>
                 </div>
 

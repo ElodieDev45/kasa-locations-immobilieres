@@ -48,23 +48,22 @@
 .dropdown-img.one {
     background-color: #FF6060;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     height: 100%;
 }
 .dropdown-img.one.active {
-    z-index: 1;
+    z-index: 0;
 }
 
 .dropdown-img.two {
     background-color: #FF6060;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     height: 100%;
 }
 .dropdown-img.two.active {
-    z-index: 0;
+    z-index: 1;
 }
-
 
 .dropdown-content {
     background-color: #F6F6F6;
@@ -79,16 +78,17 @@
 }
 
 .dropdown-content ul {
+    margin: 0;
+    padding: 2.5vw 1.5vw 1.5vw;
     list-style-type: none;
     text-align: left;
-    margin: 0;
-    padding: 2.5vw 1.4vw 2vw 1.4vw;
+    height: min-content;
 }
 
-.dropdown-datas {
-    padding: 2.5vw 1.4vw 2vw 1.4vw;
+.dropdown-content p {
+    padding: 2.5vw 1.5vw 1.5vw;
     text-align: left;
-    margin: 0;
+    height: min-content;
 }
 
 
