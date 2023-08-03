@@ -1,31 +1,39 @@
 import '../dropdown/dropdown.css'
+import { useState } from 'react'
 import foldImg from '../../assets/fold.png'
 import unfoldImg from '../../assets/unfold.png'
 
 function Dropdown({datasid, title, content}) {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <article key={datasid} className='dropdown' id={title}>
-            <button type="button" className='dropdown-button'>
-                <h2>{title}</h2>
-                <div className='dropdown-buttonImg'>
-                    <img src={foldImg} alt='fleche pour ouvrir' className='dropdown-img one'/>
-                    <img src={unfoldImg} alt='flèche pour fermer' className='dropdown-img two'/>
+        <article key={datasid} className={`dropdown ${isOpen ? 'active' : ''}`} id={title}>
+            <button onClick={() => setIsOpen(!isOpen)} className='dropdown-button'>
+                <div className='dropdown-menu'>
+                    <h2>{title}</h2>
+                    <div className={`dropdown-menuImg ${isOpen ? 'active' : ''}`}>
+                        <img src={foldImg} alt='fleche pour ouvrir' className={`dropdown-img one ${isOpen ? 'active' : ''}`}/>
+                        <img src={unfoldImg} alt='flèche pour fermer' className={`dropdown-img two ${isOpen ? 'active' : ''}`}/>
+                    </div>
                 </div>
+
+                {isOpen && (
+                <div className='dropdown-content'>
+                    {Array.isArray(content) ? (
+                        <ul>
+                            {content.map((equipment, index) =>(
+                                <li key={index} className='dropdown-datas'>
+                                    {equipment}
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p className='dropdown-datas'>{content}</p>
+                    )
+                    }           
+                </div>
+                )}
             </button>
-            <div className='dropdown-content'>
-                {Array.isArray(content) ? (
-                    <ul>
-                        {content.map((equipment, index) =>(
-                            <li key={index} className='dropdown-datas'>
-                                {equipment}
-                            </li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p className='dropdown-datas'>{content}</p>
-                )
-                }           
-            </div>
         </article>
     )
 }

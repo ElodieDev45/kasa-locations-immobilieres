@@ -3,72 +3,85 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-}
-
-.dropdown-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FF6060;
-    width: 100%;
-    min-height: 3.6vw;
-    height: 20%;
-    border: none;
-    border-radius: 10px;
-    padding-left: 1.4vw;
-}
-
-.dropdown-button h2 {
-    text-align: left;    
-    color: white;
-    font-size: 1.3vw;
-    font-weight: medium;
-    width: 80%;
-}
-
-.dropdown-buttonImg {
-    display: flex;
-    justify-content: right;
-    position: relative;
-    z-index: 1;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 20%;
 }
-.dropdown-img {
-    height: 100%;
+.dropdown-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    min-height: ;
+}
+
+.dropdown-menu {
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    min-height: 3.6vw;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu h2 {
+    color: white;
+    padding-left: 1vw;
+    width: 85%;
+    text-align: left;
+    font-size: 1.3vw;
+}
+
+.dropdown-menuImg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 15%;
+    height: 62%;
 }
 .dropdown-img.one {
-    background-color: #60ff78;
-    position: relative;
-    left: 0;
+    background-color: #FF6060;
+    position: absolute;
     z-index: 0;
+    height: 100%;
 }
+.dropdown-img.one.active {
+    z-index: 1;
+}
+
 .dropdown-img.two {
-    background-color: aqua;
+    background-color: #FF6060;
     position: absolute;
     z-index: 1;
+    height: 100%;
+}
+.dropdown-img.two.active {
+    z-index: 0;
 }
 
 
 .dropdown-content {
     background-color: #F6F6F6;
     color: #FF6060;
-    height: 80%;
-    margin: 0;
-    padding: 1.4vw;
-    font-size: 1.3vw;
+    position: relative;
+    top: -0.5vw;
+    z-index: -1;
     border-radius: 10px;
+    width: 100%;
+    min-height: 17.3vw;
+    font-size: 1.3vw;
 }
 
 .dropdown-content ul {
     list-style-type: none;
+    text-align: left;
     margin: 0;
-    padding: 0;
-}
-
-.dropdown-datas {
-    margin: 0;
-    padding: 0;
+    padding: 2.5vw 1.4vw 2vw 1.4vw;
 }
