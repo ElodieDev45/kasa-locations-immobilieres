@@ -20,6 +20,43 @@ header{
     margin: 0 auto;
 }
 
+main.Dropdown {
+    margin: 0 auto 3vw;
+}
+
+.About-dropdown{
+    width: 83%;
+    margin: 0vw auto 1.6vw;
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+}
+
+.dropdown-menu h2{
+    width: 90%;
+    font-size: 1.7vw;
+}
+
+.dropdown-menuImg {
+    width: 10%;
+    height: 3.6vw;
+}
+
+.dropdown-content {
+    font-size:1.7vw;
+    top: -1vw;
+    border-radius: 5px;
+    height: max-content;
+    min-height: inherit;
+}
+
+.dropdown-content p {
+    margin: 0;
+    padding: 3vw 1.5vw 1vw;
+}
+
+
 footer {
     width: 100%;
 }
