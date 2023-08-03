@@ -6,10 +6,10 @@ function Dropdown({datasid, title, content}) {
     return (
         <article key={datasid} className='dropdown' id={title}>
             <button type="button" className='dropdown-button'>
-                {title}
-                <div className='buttonImg'>
-                    <img src={foldImg} alt='fleche pour ouvrir'/>
-                    <img src={unfoldImg} alt='flèche pour fermer'/>
+                <h2>{title}</h2>
+                <div className='dropdown-buttonImg'>
+                    <img src={foldImg} alt='fleche pour ouvrir' className='dropdown-img one'/>
+                    <img src={unfoldImg} alt='flèche pour fermer' className='dropdown-img two'/>
                 </div>
             </button>
             <div className='dropdown-content'>
