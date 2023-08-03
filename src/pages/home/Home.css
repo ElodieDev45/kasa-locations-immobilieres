@@ -1,6 +1,8 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 #Home{
@@ -28,6 +30,7 @@ header{
 }
 
 .Cards ul {
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
