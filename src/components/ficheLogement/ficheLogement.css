@@ -1,57 +1,67 @@
+.ficheLogement {
+    width: 100%;
+}
+
 .ficheLogement-carrousel {
     height: 29vw;
 }
 
-.ficheLogement-nh {
-    margin: 2vw 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.ficheLogement-name {
+.ficheLogement-head {
+    margin: 1vw 0 1.4vw 0;
     color: #FF6060;
-    width: 80%;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 75% 10% 15%;
+    grid-template-rows: auto auto auto;
 }
 
-.ficheLogement-host {
-    margin-left: 2vw;
-    width: 15%;
-    height: 4.5vw;
-}
-
-.ficheLogement-name h1{
+.ficheLogement h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 3vw;
     margin: 0;
-    width: 60%;
+    padding: 0.5vw 0 0.1vw 0;
     font-size: 2.5vw;
     font-weight: 500;
     white-space : nowrap;
-    height: 4.5vw;
-    display: flex;
-    align-items: center;
 }
 
-.ficheLogement-name p {
-    font-size: 1.3vw;
+.ficheLogement p {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
     margin: 0;
+    padding: 0 0 1.2vw 0;
+    height: 1.7vw;
+    font-size: 1.3vw;
 }
 
-.ficheLogement-tr {
-    margin: 2vw 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.ficheLogement-host {
+    margin: 0;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .ficheLogement-tags {
+    grid-area: 3;
     width: 70%;
     margin: 0;
     height: 1.8vw;
 }
 
 .ficheLogement-rate {
-    width: 30%;
+    color: blue;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0;
+    text-align: right;
+    font-size: 1.5em;
+    height: 1.8vw;
 }
 
 .ficheLogement-details {

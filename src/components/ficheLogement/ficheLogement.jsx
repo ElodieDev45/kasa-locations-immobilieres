@@ -17,11 +17,9 @@ function FicheLogement({datasid, title, pictures, description, hostName, hostPic
                     pictures={pictures}
                 />
             </div>
-            <div className='ficheLogement-nh'>
-                <div className="ficheLogement-name">
-                    <h1 datasid={datasid} >{title}</h1>
-                    <p datasid={datasid} >{location}</p>
-                </div>
+            <div className='ficheLogement-head'>
+                <h1 datasid={datasid} >{title}</h1>
+                <p datasid={datasid} >{location}</p>
                 <aside className="ficheLogement-host">
                     <Host
                         datasid={datasid}
@@ -29,8 +27,6 @@ function FicheLogement({datasid, title, pictures, description, hostName, hostPic
                         picture={hostPicture}
                     />
                 </aside>
-            </div>
-            <div className='ficheLogement-tr'>
                 <div className='ficheLogement-tags'>
                     <Tags
                     datasid={datasid} 
