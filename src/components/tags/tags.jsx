@@ -1,5 +1,3 @@
-import '../tags/tags.css'
-
 function Tags({datasid, tags}) {
     return (
         <ul key={datasid} className="tags">

@@ -1,5 +1,3 @@
-import '../ficheLogement/ficheLogement.css'
-
 import Carrousel from "../carrousel/carrousel"
 import Dropdown from "../dropdown/dropdown"
 import Tags from "../tags/tags"

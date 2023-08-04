@@ -1,5 +1,3 @@
-import './banner.css'
-
 function Banner({img, alt, title}) {
     return (
       <div className='Banner'>

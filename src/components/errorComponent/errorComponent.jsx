@@ -1,5 +1,3 @@
-import './errorComponent.css'
-
 function ErrorComponent({errorImg, errorText, altImg}) {
     return (
         <div className='error-component'>

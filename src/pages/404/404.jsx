@@ -1,4 +1,3 @@
-import './404.css'
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import ErrorComponent from '../../components/errorComponent/errorComponent'

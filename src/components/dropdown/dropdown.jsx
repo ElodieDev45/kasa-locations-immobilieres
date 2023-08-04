@@ -1,4 +1,3 @@
-import '../dropdown/dropdown.css'
 import { useState } from 'react'
 import foldImg from '../../assets/fold.png'
 import unfoldImg from '../../assets/unfold.png'

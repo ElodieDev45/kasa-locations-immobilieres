@@ -1,4 +1,3 @@
-import './Details.css'
 import Header from '../../components/header/header'
 import FicheLogement from '../../components/ficheLogement/ficheLogement'
 import Footer from '../../components/footer/footer'

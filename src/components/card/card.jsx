@@ -1,5 +1,3 @@
-import './card.css'
-
 function Card({datasid, titleCard, coverCard}) {
     return (
       <li 

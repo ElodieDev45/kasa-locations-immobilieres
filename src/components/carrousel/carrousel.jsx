@@ -1,4 +1,3 @@
-import '../carrousel/carrousel.css'
 import { useState } from "react"
 import previous from '../../assets/previous.png'
 import next from  '../../assets/next.png'

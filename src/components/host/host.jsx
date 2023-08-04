@@ -1,5 +1,3 @@
-import '../host/host.css'
-
 function Host({datasid, name, picture}){
     return(
         <div 
