@@ -5,6 +5,7 @@ import About from './pages/about/About';
 import Error404 from './pages/404/404';
 import {createRoot} from 'react-dom/client';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import '../src/styles/styles.scss';
 
 const App = () => (
   <>
