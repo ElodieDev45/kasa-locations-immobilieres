@@ -10,16 +10,28 @@ body{
     width: 100%;
 }
 
-header{
+#Details header{
     width: 86%;
     margin: 0 auto;
 }
 
-main {
+#Details main {
     width: 86%;
     margin: 0 auto;
 }
 
-footer {
+#Details footer {
     width: 100%;
+}
+
+#Details .dropdown-menu h2 {
+    font-size: 1.3vw;
+}
+
+#Details .dropdown-content ul {
+    font-size: 1.3vw;
+}
+
+#Details .dropdown-content p {
+    font-size: 1.3vw;
 }
