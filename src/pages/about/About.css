@@ -1,8 +1,3 @@
-body{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 #About{
     max-width: 1440px;
     align-content: center;
@@ -10,40 +5,40 @@ body{
     width: 100%;
 }
 
-header{
+#About header{
     width: 86%;
     margin: 0 auto;
 }
 
-.About-banner {
+#About .About-banner {
     width: 86%;
     margin: 0 auto;
 }
 
-main.Dropdown {
+#About main.Dropdown {
     margin: 0 auto 3vw;
 }
 
-.About-dropdown{
+#About .About-dropdown{
     width: 83%;
     margin: 0vw auto 1.6vw;
 }
 
-.dropdown-menu {
+#About .dropdown-menu {
     border-radius: 5px;
 }
 
-.dropdown-menu h2{
+#About .dropdown-menu h2{
     width: 90%;
     font-size: 1.7vw;
 }
 
-.dropdown-menuImg {
+#About .dropdown-menuImg {
     width: 10%;
     height: 3.6vw;
 }
 
-.dropdown-content {
+#About .dropdown-content {
     font-size:1.7vw;
     top: -1vw;
     border-radius: 5px;
@@ -51,12 +46,12 @@ main.Dropdown {
     min-height: inherit;
 }
 
-.dropdown-content p {
+#About .dropdown-content p {
     margin: 0;
     padding: 3vw 1.5vw 1vw;
+    line-height: 142.6%;
 }
 
-
-footer {
+#About footer {
     width: 100%;
 }

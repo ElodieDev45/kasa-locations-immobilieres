@@ -12,24 +12,24 @@ body{
     width: 100%;
 }
 
-header{
+#Home header{
     width: 86%;
     margin: 0 auto;
 }
 
-.Home-banner {
+#Home .Home-banner {
     width: 86%;
     margin: 0 auto;
 }
 
-.Cards {
+#Home .Cards {
     width: 86%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.Cards ul {
+#Home .Cards ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +40,7 @@ header{
     margin: 5vw;
 }
 
-.Cards a {
+#Home .Cards a {
     width: 24vw;
     max-width: 340px;
     height: 24vw;
@@ -48,6 +48,6 @@ header{
 
 }
 
-footer {
+#Home footer {
     width: 100%;
 }
