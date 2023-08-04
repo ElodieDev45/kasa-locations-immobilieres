@@ -1,0 +1,41 @@
+//theme-default.scss
+
+// Couleurs
+$primary-color: #FF6060;
+$secondary-color:#ffffff;
+$tertiary-color: #F6F6F6;
+$quaternary-color:#000000;
+$quintenary-color: transparent;
+
+//Dégradé
+$linear-gradient-color: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+
+// Polices
+$font-family: 'Montserrat', sans-serif;
+$font-medium: 500;
+$font-regular: 400;
+
+// Tailles de police pour base écran 1440px (ici en vw)
+//14px
+$font-size-medium-small: 1vw;
+//18px
+$font-size-large: 1.3vw;
+//24px
+$font-size-extra-large: 1.7vw;
+//36px
+$font-size-huge: 2.5vw;
+//48px
+$font-size-biggest: 3.4vw;
+
+
+// Tailles de police pour base écran 375px (ici en vw)
+//10px
+$font-size-smallest: 10px;
+//12px
+$font-size-extra-small:12px;
+//13px
+$font-size-small: 13px;
+//16px
+$font-size-medium: 16px;
+//20px
+$font-size-medium-large: 20px;
