@@ -1,0 +1,34 @@
+//import des styles des thèmes
+@import 'themes/theme-default';
+
+//import des styles de variables globales et mixin
+@import 'abstracts/fonctions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/variables';
+
+//import des styles de base
+@import 'base/typographie';
+
+//import des styles de mise en page
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/ficheLogement';
+
+//import des styles de composants
+@import 'components/banner';
+@import 'components/card';
+@import 'components/carrousel';
+@import 'components/dropdown';
+@import 'components/errorComponent';
+@import 'components/host';
+@import 'components/rate';
+@import 'components/tags';
+
+//import des styles de pages
+@import 'pages/Home';
+@import 'pages/Details';
+@import 'pages/About';
+@import 'pages/404';
+
+
