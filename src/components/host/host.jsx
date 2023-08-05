@@ -4,9 +4,9 @@ function Host({datasid, name, picture}){
             key={datasid}
             className="Host"
         >
-            <h3 className='Host-name'>
+            <p className='Host-name'>
                 {name}
-            </h3>
+            </p>
             <div className='Host-img'>
                 <img 
                     src={picture}
