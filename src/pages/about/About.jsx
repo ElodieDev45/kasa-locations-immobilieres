@@ -18,8 +18,8 @@ function About() {
                     alt={'paysage de montagne et rivière'}
                 />
             </section>
-            <main className='Dropdown'>
-                <article className='About-dropdown'>
+            <main className='About-dropdown'>
+                <article>
                     {aboutDatas.map(({id, Reliability}) => (
                         <Dropdown 
                             id={id}
@@ -28,7 +28,7 @@ function About() {
                         />
                     ))}
                 </article>
-                <article className='About-dropdown'>
+                <article>
                     {aboutDatas.map(({id, Respect}) => (
                         <Dropdown 
                             id={id}
@@ -37,7 +37,7 @@ function About() {
                         />
                     ))}
                 </article>
-                <article className='About-dropdown'>
+                <article>
                     {aboutDatas.map(({id, Service}) => (
                         <Dropdown 
                             id={id}
@@ -46,7 +46,7 @@ function About() {
                         />
                     ))}
                 </article>
-                <article className='About-dropdown'>
+                <article>
                     {aboutDatas.map(({id, Security}) => (
                         <Dropdown 
                             id={id}
