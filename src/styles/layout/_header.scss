@@ -1,37 +1,35 @@
 .Header {
-  margin: 0;
-  min-height: 10vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-.Header-logo {
-  width: 16.5%;
-}
-
-.Header-nav {
-  width: 40%;
-  font-size: 2.5vw;
-  color: #FF6060;
-}
-
-.Header-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  gap: 2em;
-}
-
-.Header-nav li {
-  font-size: 1.7vw;
-}
-
-.Header-nav a {
-  text-decoration: none;
-  color: #FF6060;
-}
-
+  margin: 0;
+  min-height: 10vw;
   
+  &-logo {
+    width: 16.5%;
+  }
+  
+  &-nav {
+    width: 40%;
+    font-size: 2.5vw;
+    color: $primary-color;
+    
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      gap: 2em;
+    }
+    
+    li {
+      font-size: 1.7vw;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+}
