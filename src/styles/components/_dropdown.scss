@@ -7,17 +7,17 @@
     padding: 0;
 
     &-button {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         font-family: $font-family;
         font-weight: $font-medium;
-        position: relative;
         background-color: $quintenary-color;
         border: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: max-content;
+        height: min-content;
     }
     
     &-menu {
@@ -34,6 +34,8 @@
         
         h2 {
             color: $secondary-color;
+            font-weight: $font-medium;
+            margin: 0;
             padding-left: 1vw;
             width: 85%;
             text-align: left;
@@ -48,25 +50,25 @@
         height: 62%;
     }
 
-    &-img.one {
+    &-img {
         background-color: $primary-color;
         position: absolute;
-        z-index: 1;
         height: 100%;
-
-        &.active {
-            z-index: 0;
-        }
-    }
-
-    &-img.two {
-        background-color: $primary-color;
-        position: absolute;
-        z-index: 0;
-        height: 100%;
-
-        &.active {
+        
+        &.one {
             z-index: 1;
+    
+            &.active {
+                z-index: 0;
+            }
+        }
+        
+        &.two {
+            z-index: 0;
+    
+            &.active {
+                z-index: 1;
+            }
         }
     }
 
@@ -91,6 +93,7 @@
         
         p {
             padding: 2.5vw 1.5vw 1.5vw;
+            margin: 0;
             text-align: left;
             height: min-content;
         }
