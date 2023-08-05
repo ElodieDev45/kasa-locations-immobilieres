@@ -14,7 +14,7 @@
         max-width: 340px;
         height: 100%;
         max-height: 340px;
-        border-radius: 10px;
+        border-radius: $radius-midi;
         background-image: $linear-gradient-color;
     }
 
@@ -23,7 +23,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        border-radius: 10px;
+        border-radius: $radius-midi;
     }
 
     h3{

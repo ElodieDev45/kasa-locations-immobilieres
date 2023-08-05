@@ -12,7 +12,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        border-radius: 25px;
+        border-radius: $radius-regular;
         background: $quaternary-color-bkg;
     }
 
@@ -22,7 +22,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        border-radius: 25px;
+        border-radius: $radius-regular;
     }
 
     h1 {

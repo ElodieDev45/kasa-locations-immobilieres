@@ -9,6 +9,12 @@ $quaternary-color-gradient : rgba(0, 0, 0, 0.5);
 $quaternary-color-bkg :rgba(0, 0, 0, 0.3);
 $quintenary-color: transparent;
 
+//radius
+$radius-mini: 5px;
+$radius-midi: 10px;
+$radius-regular: 25px;
+$radius-maxi: 50px;
+
 //Dégradé
 $linear-gradient-color: linear-gradient(to bottom, $quintenary-color, $quaternary-color-gradient);
 

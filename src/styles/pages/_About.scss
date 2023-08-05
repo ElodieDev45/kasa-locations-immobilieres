@@ -22,7 +22,7 @@
                 margin-bottom: 1vw;
                 
                 &-menu {
-                    border-radius: 5px;
+                    border-radius: $radius-mini;
                     
                     h2 {
                         width: 90%;
@@ -38,7 +38,7 @@
                 &-content {
                     font-size: $font-size-extra-large;
                     top: -1vw;
-                    border-radius: 5px;
+                    border-radius: $radius-mini;
                     height: max-content;
                     min-height: inherit;
                     
