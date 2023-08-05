@@ -3,44 +3,38 @@
     align-content: center;
     margin: 0 auto;
     width: 100%;
-}
 
-#Home header{
-    width: 86%;
-    margin: 0 auto;
-}
+    header, .Home-banner{
+        width: 86%;
+        margin: 0 auto;
+    }
 
-#Home .Home-banner {
-    width: 86%;
-    margin: 0 auto;
-}
+    .Cards {
+        width: 86%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
 
-#Home .Cards {
-    width: 86%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 2.5vw;
+            width: 100%;
+            padding: 0;
+            margin: 5vw;
+        }
 
-#Home .Cards ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 2.5vw;
-    width: 100%;
-    padding: 0;
-    margin: 5vw;
-}
+        a {
+            width: 24vw;
+            max-width: 340px;
+            height: 24vw;
+            max-height: 340px;
+        }
+    }
 
-#Home .Cards a {
-    width: 24vw;
-    max-width: 340px;
-    height: 24vw;
-    max-height: 340px;
-
-}
-
-#Home footer {
-    width: 100%;
+    footer {
+        width: 100%;
+    }
 }

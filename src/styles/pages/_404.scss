@@ -1,22 +1,17 @@
 #error404{
-    max-width: 1440px;
-    align-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
+    header{
+        width: 86%;
+        margin: 0 auto;
+    }
 
-#error404 header{
-    width: 86%;
-    margin: 0 auto;
-}
+    .main-error {
+        width: 86%;
+        margin: 12vw auto;
+        color: $primary-color;
+        text-align: center;
+    }
 
-#error404 .main-error {
-    width: 86%;
-    margin: 12vw auto;
-    color: #FF6060;
-    text-align: center;
-}
-
-#error404 footer {
-    width: 100%;
+    footer {
+        width: 100%;
+    }
 }

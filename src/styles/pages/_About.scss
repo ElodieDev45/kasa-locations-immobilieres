@@ -1,57 +1,50 @@
 #About{
-    max-width: 1440px;
-    align-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
+    header, .About-banner {
+        width: 86%;
+        margin: 0 auto;
+    }
 
-#About header{
-    width: 86%;
-    margin: 0 auto;
-}
+    main.Dropdown {
+        margin: 0 auto 3vw;
+    }
 
-#About .About-banner {
-    width: 86%;
-    margin: 0 auto;
-}
+    .About-dropdown{
+        width: 83%;
+        margin: 0vw auto 1.6vw;
 
-#About main.Dropdown {
-    margin: 0 auto 3vw;
-}
+        .dropdown {
+            
+            &-menu {
+                border-radius: 5px;
+            
+                h2{
+                    width: 90%;
+                    font-size: 1.7vw;
+                }
+            }
 
-#About .About-dropdown{
-    width: 83%;
-    margin: 0vw auto 1.6vw;
-}
+            &-menuImg {
+                width: 10%;
+                height: 3.6vw;
+            }
 
-#About .dropdown-menu {
-    border-radius: 5px;
-}
+            &-content {
+                font-size:1.7vw;
+                top: -1vw;
+                border-radius: 5px;
+                height: max-content;
+                min-height: inherit;
+            
+                p {
+                    margin: 0;
+                    padding: 3vw 1.5vw 1vw;
+                    line-height: 142.6%;
+                }
+            }
+        }
+    }
 
-#About .dropdown-menu h2{
-    width: 90%;
-    font-size: 1.7vw;
-}
-
-#About .dropdown-menuImg {
-    width: 10%;
-    height: 3.6vw;
-}
-
-#About .dropdown-content {
-    font-size:1.7vw;
-    top: -1vw;
-    border-radius: 5px;
-    height: max-content;
-    min-height: inherit;
-}
-
-#About .dropdown-content p {
-    margin: 0;
-    padding: 3vw 1.5vw 1vw;
-    line-height: 142.6%;
-}
-
-#About footer {
-    width: 100%;
+    footer {
+        width: 100%;
+    }
 }

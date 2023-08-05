@@ -1,34 +1,30 @@
 #Details{
-    max-width: 1440px;
-    align-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
 
-#Details header{
-    width: 86%;
-    margin: 0 auto;
-}
+    header, main {
+        width: 86%;
+        margin: 0 auto;
+    }
 
-#Details main {
-    width: 86%;
-    margin: 0 auto;
-}
+    .dropdown {
+        &-menu h2 {
+            font-size: 1.3vw;
+        }
+        
+        &-content {
+            
+            ul {
+                font-size: 1.3vw;
+                line-height: 142.6%;
+            }
 
-#Details footer {
-    width: 100%;
-}
+            p {
+                font-size: 1.3vw;
+                line-height: 142.6%;
+            }
+        }
+    }
 
-#Details .dropdown-menu h2 {
-    font-size: 1.3vw;
-}
-
-#Details .dropdown-content ul {
-    font-size: 1.3vw;
-    line-height: 142.6%;
-}
-
-#Details .dropdown-content p {
-    font-size: 1.3vw;
-    line-height: 142.6%;
+    footer {
+        width: 100%;
+    }
 }
