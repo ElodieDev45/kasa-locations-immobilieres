@@ -12,15 +12,15 @@
         h1{
             width: -moz-fit-content;
             width: fit-content;
-            font-size: 2.5vw;
+            font-size: $font-size-huge;
             margin: 6vw auto;
-            font-weight: medium;
+            font-weight: $font-medium;
         }
     }
     
     &-component a {
         color: $primary-color;
-        font-size: 1.3vw;
+        font-size: $font-size-large;
     }
 }
     

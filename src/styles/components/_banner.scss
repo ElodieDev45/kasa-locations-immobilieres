@@ -1,9 +1,9 @@
 .Banner {
-  position: relative;
-  margin: 4vw 0;
-  height: 18vw;
-  display: flex;
-  flex-direction: row-reverse;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 4vw 0;
+    height: 18vw;
 
     &::after {
         content: "";
@@ -13,7 +13,7 @@
         top: 0;
         left: 0;
         border-radius: 25px;
-        background: $quaternary-color-30;
+        background: $quaternary-color-bkg;
     }
 
     &-img {
@@ -27,14 +27,14 @@
 
     h1 {
         position: absolute;
+        z-index: 1;
         margin: 0 5%;
-        font-size: 3.4vw;
-        font-weight: 500;
+        font-size: $font-size-biggest;
+        font-weight: $font-medium;
         width: 100%;
         bottom: 7vw;
         margin: 0;
-        z-index: 1;
         text-align: center;
-        color: white;
+        color: $secondary-color;
     }
 }

@@ -20,8 +20,8 @@
         height: 3vw;
         margin: 0;
         padding: 0.5vw 0 0.1vw 0;
-        font-size: 2.5vw;
-        font-weight: 500;
+        font-size: $font-size-huge;
+        font-weight: $font-medium;
         white-space : nowrap;
     }
 
@@ -33,7 +33,7 @@
         margin: 0;
         padding: 0 0 1.2vw 0;
         height: 1.7vw;
-        font-size: 1.3vw;
+        font-size: $font-size-large;
     }
 
     &-host {
@@ -58,8 +58,8 @@
         grid-column-end: 4;
         margin: 0;
         text-align: right;
-        font-size: 1.5em;
         height: 1.8vw;
+        font-size: $font-size-extra-large;
     }
 
     &-details {

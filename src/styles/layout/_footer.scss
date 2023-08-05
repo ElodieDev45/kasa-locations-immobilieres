@@ -1,20 +1,20 @@
 .Footer {
-  background-color: $quaternary-color;
-  width:100%;
-  height: 14vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  
-  &-logo{
-    margin: 1.5vw;
-    width: 8.5vw;
-  }
-  
-  &-AllRights {
-    padding: 0 5%;
-    font-size: 1.7vw;
-    color: $secondary-color;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $quaternary-color;
+    width:100%;
+    height: 14vw;
+    
+    &-logo{
+        margin: 1.5vw;
+        width: 8.5vw;
+    }
+    
+    &-AllRights {
+        padding: 0 5%;
+        font-size: $font-size-extra-large;
+        color: $secondary-color;
+    }
 }

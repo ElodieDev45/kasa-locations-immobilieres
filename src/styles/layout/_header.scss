@@ -12,19 +12,19 @@
   
   &-nav {
     width: 40%;
-    font-size: 2.5vw;
+    font-size: $font-size-huge;
     color: $primary-color;
     
     ul {
-      list-style-type: none;
       display: flex;
       flex-direction: row;
       justify-content: right;
       gap: 2em;
+      list-style-type: none;
     }
     
     li {
-      font-size: 1.7vw;
+      font-size: $font-size-extra-large;
     }
     
     a {
