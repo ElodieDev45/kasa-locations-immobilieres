@@ -2,12 +2,13 @@
 @import 'themes/theme-default';
 
 //import des styles de variables globales et mixin
-@import 'abstracts/fonctions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'abstracts/variables';
+@import 'utils/fonctions';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+@import 'utils/variables';
 
 //import des styles de base
+@import 'base/base';
 @import 'base/typographie';
 
 //import des styles de mise en page
