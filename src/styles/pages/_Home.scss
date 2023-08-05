@@ -1,29 +1,31 @@
 #Home{
-    max-width: 1440px;
-    align-content: center;
-    margin: 0 auto;
-    width: 100%;
-
+    
     header, .Home-banner{
         width: 86%;
         margin: 0 auto;
     }
 
+    .Home-banner{
+        padding: 2vw 0 3vw;
+    }
+
     .Cards {
+        background-color: $tertiary-color;
         width: 86%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        border-radius: 25px;
 
         ul {
             list-style-type: none;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            row-gap: 2.5vw;
+            row-gap: 4vw;
             width: 100%;
             padding: 0;
-            margin: 5vw;
+            margin: 4vw 3vw;
         }
 
         a {

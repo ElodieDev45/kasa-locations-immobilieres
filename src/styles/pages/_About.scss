@@ -1,44 +1,52 @@
 #About{
-    header, .About-banner {
+    header, .About-banner, .About-dropdown {
         width: 86%;
         margin: 0 auto;
+    }
+
+    .About-banner{
+        padding: 1vw 0 3vw;
     }
 
     main.Dropdown {
         margin: 0 auto 3vw;
     }
 
-    .About-dropdown{
-        width: 83%;
-        margin: 0vw auto 1.6vw;
+    .About-dropdown {
+        article{
+            width: 83%;
+            margin: 0 auto;
 
-        .dropdown {
-            
-            &-menu {
-                border-radius: 5px;
-            
-                h2{
-                    width: 90%;
-                    font-size: $font-size-extra-large;
+            .dropdown {
+                width: 100%;
+                margin-bottom: 1vw;
+                
+                &-menu {
+                    border-radius: 5px;
+                    
+                    h2 {
+                        width: 90%;
+                        font-size: $font-size-extra-large;
+                    }
                 }
-            }
-
-            &-menuImg {
-                width: 10%;
-                height: 3.6vw;
-            }
-
-            &-content {
-                font-size: $font-size-extra-large;
-                top: -1vw;
-                border-radius: 5px;
-                height: max-content;
-                min-height: inherit;
-            
-                p {
-                    margin: 0;
-                    padding: 3vw 1.5vw 1vw;
-                    line-height: $text-line-height-1;
+                
+                &-menuImg {
+                    width: 10%;
+                    height: 3.6vw;
+                }
+                
+                &-content {
+                    font-size: $font-size-extra-large;
+                    top: -1vw;
+                    border-radius: 5px;
+                    height: max-content;
+                    min-height: inherit;
+                    
+                    p {
+                        margin: 0;
+                        padding: 3vw 1.5vw 1vw;
+                        line-height: $text-line-height-1;
+                    }
                 }
             }
         }
