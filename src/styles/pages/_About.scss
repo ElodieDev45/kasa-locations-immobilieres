@@ -5,7 +5,8 @@
     }
 
     .About-banner{
-        padding: 1vw 0 3vw;
+        padding: 0vw 0 2vw;
+        height: 15.5vw;
     }
 
     main.Dropdown {
@@ -13,13 +14,16 @@
     }
 
     .About-dropdown {
+        padding-bottom: 10vw;
+
         article{
             width: 83%;
             margin: 0 auto;
+            padding-bottom: 2vw;
 
             .dropdown {
                 width: 100%;
-                margin-bottom: 1vw;
+                padding: 0;
                 
                 &-menu {
                     border-radius: $radius-mini;
