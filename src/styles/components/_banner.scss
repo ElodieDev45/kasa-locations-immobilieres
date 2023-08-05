@@ -29,12 +29,10 @@
     h1 {
         position: absolute;
         z-index: 1;
-        margin: 0 5%;
+        margin: 0;
+        width: 100%;
+        color: $secondary-color;
         font-size: $font-size-biggest;
         font-weight: $font-medium;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        color: $secondary-color;
     }
 }
