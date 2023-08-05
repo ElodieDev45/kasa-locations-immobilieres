@@ -5,10 +5,12 @@ $primary-color: #FF6060;
 $secondary-color:#ffffff;
 $tertiary-color: #F6F6F6;
 $quaternary-color:#000000;
+$quaternary-color-50 : rgba(0, 0, 0, 0.5);
+$quaternary-color-30 :rgba(0, 0, 0, 0.3);
 $quintenary-color: transparent;
 
 //Dégradé
-$linear-gradient-color: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+$linear-gradient-color: linear-gradient(to bottom, $quintenary-color, $quaternary-color-50);
 
 // Polices
 $font-family: 'Montserrat', sans-serif;

@@ -2,7 +2,7 @@ function Tags({datasid, tags}) {
     return (
         <ul key={datasid} className="tags">
             {tags.map((tag, index) =>(
-                <li className="tag" key={index}>
+                <li className="tags-unit" key={index}>
                     {tag}
                 </li>
             ))}

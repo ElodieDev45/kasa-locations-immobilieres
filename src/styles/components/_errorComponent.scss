@@ -1,24 +1,26 @@
-
-.error-body{
-    margin-bottom: 14vw;
+.error {
+    &-body{
+        margin-bottom: 14vw;
+        
+        img{
+            width: 41vw;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        h1{
+            width: -moz-fit-content;
+            width: fit-content;
+            font-size: 2.5vw;
+            margin: 6vw auto;
+            font-weight: medium;
+        }
+    }
+    
+    &-component a {
+        color: $primary-color;
+        font-size: 1.3vw;
+    }
 }
-
-.error-body img{
-    width: 41vw;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.error-body h1{
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 2.5vw;
-    margin: 6vw auto;
-    font-weight: medium;
-}
-
-.error-component a {
-    color: #FF6060;
-    font-size: 1.3vw;
-}
+    

@@ -1,5 +1,5 @@
 .Host {
-    color: #FF6060;
+    color: $primary-color;
     margin: 0;
     display: flex;
     justify-content: right;
@@ -7,29 +7,30 @@
     gap: 1vw;
     width: 100%;
     height: 100%;
+    
+    &-name {
+        margin: 0;
+        padding: 0;
+        overflow-wrap : break-word;
+        white-space : pre-line;
+        text-align: right;
+        width: 50%;
+        font-size: 1.3vw;
+    }
+    
+    &-img {
+        margin: 0;
+        padding: 0;
+        
+        img {
+            margin: 0;
+            padding: 0;
+            width: 4.5vw;
+            min-width: 4.5vw;
+            height: 4.5vw;
+            min-height: 4.5vw;
+            border-radius: 50%;
+        }
+    }
 }
-
-.Host-name {
-    margin: 0;
-    padding: 0;
-    overflow-wrap : break-word;
-    white-space : pre-line;
-    text-align: right;
-    width: 50%;
-    font-size: 1.3vw;
-}
-
-.Host-img {
-    margin: 0;
-    padding: 0;
-}
-
-.Host-img img {
-    margin: 0;
-    padding: 0;
-    width: 4.5vw;
-    min-width: 4.5vw;
-    height: 4.5vw;
-    min-height: 4.5vw;
-    border-radius: 50%;
-}
+    

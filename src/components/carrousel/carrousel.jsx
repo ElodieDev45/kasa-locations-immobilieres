@@ -20,11 +20,11 @@ function Carrousel({datasid, title, pictures}) {
         <div className="carrousel" key={datasid}>
             <figure>
                 <button onClick={handlePrevious} id='previous' ><img src={previous} className='scrollPrevious' alt='flèche précédent'/></button>
-                    <img
-                        src={pictures[index]}
-                        alt={`aperçu du logement ${title}`}
-                        className='pctLogement'
-                    />
+                <img
+                    src={pictures[index]}
+                    alt={`aperçu du logement ${title}`}
+                    className='pctLogement'
+                />
                 <button onClick={handleNext} id='next'><img src={next} className='scrollNext' alt='flèche suivant'/></button>
             </figure>
         </div>
