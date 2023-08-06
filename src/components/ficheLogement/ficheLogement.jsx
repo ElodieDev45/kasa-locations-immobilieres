@@ -16,22 +16,22 @@ function FicheLogement({datasid, title, pictures, description, hostName, hostPic
                 />
             </div>
             <div className='ficheLogement-head'>
-                <h1 datasid={datasid} >{title}</h1>
-                <p datasid={datasid} >{location}</p>
-                <aside className="ficheLogement-host">
+                <h1 datasid={datasid} className="ficheLogement-head__name">{title}</h1>
+                <p datasid={datasid} className="ficheLogement-head__location">{location}</p>
+                <aside className="ficheLogement-head__host">
                     <Host
                         datasid={datasid}
                         name={hostName}
                         picture={hostPicture}
                     />
                 </aside>
-                <div className='ficheLogement-tags'>
+                <div className='ficheLogement-head__tags'>
                     <Tags
                     datasid={datasid} 
                     tags={tags}            
                     />
                 </div>
-                <div className='ficheLogement-rate'>
+                <div className='ficheLogement-head__rate'>
                     <Rate
                         datasid={datasid} 
                         rating={rating}
@@ -39,14 +39,14 @@ function FicheLogement({datasid, title, pictures, description, hostName, hostPic
                 </div>
             </div>
             <div className="ficheLogement-details">
-                <article className='ficheLogement-dropdown un'>
+                <article className='ficheLogement-details__dropdown un'>
                     <Dropdown
                         datasid={datasid} 
                         title='Description'
                         content={description}
                     />
                 </article>
-                <article className='ficheLogement-dropdown deux'>
+                <article className='ficheLogement-details__dropdown deux'>
                     <Dropdown
                         datasid={datasid}
                         title='Equipements'
