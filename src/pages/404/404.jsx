@@ -1,7 +1,6 @@
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import ErrorComponent from '../../components/errorComponent/errorComponent'
-import imgError404 from '../../assets/error404.png'
 
 function Error404() {
     return(
