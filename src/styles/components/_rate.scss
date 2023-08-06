@@ -1,0 +1,27 @@
+.rate-stars {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    p {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+
+        i {
+            font-size: 1.5vw;
+            padding: 0.5vw 0.4vw;
+        }
+
+        &.active{
+            color: $primary-color;
+        }
+
+        &.pending{
+            color: $tertiary-color-stars;
+        }
+    }
+}
