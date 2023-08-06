@@ -1,9 +1,9 @@
-function ErrorComponent({errorImg, errorText, altImg}) {
+function ErrorComponent({errorNumber, errorText, altImg}) {
     return (
         <div className='error-component'>
             <div className="error-body">
-                <img src={errorImg} alt={altImg} className='error-img' />
-                <h1>{errorText}</h1>
+                <h1 className="error-body__number">{errorNumber}</h1>
+                <h2 className="error-body__text">{errorText}</h2>
             </div>
             <a href="../../">Retourner sur la page d'acceuil</a>
         </div>

@@ -11,8 +11,7 @@ function Error404() {
             </header>
             <main className='main-error'>
                 <ErrorComponent 
-                    errorImg={imgError404}
-                    altImg={"code d'erreur 404"}
+                    errorNumber={404}
                     errorText={"Oups! La page que vous demandez n'existe pas"}
                 />
             </main>

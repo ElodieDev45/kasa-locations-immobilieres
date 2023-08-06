@@ -27,6 +27,7 @@ $text-line-height-2: 125%;
 $font-family: 'Montserrat', sans-serif;
 $font-medium: 500;
 $font-regular: 400;
+$font-bold: 700;
 
 // Tailles de police pour base écran 1440px (ici en vw)
 //14px
@@ -39,6 +40,8 @@ $font-size-extra-large: 1.7vw;
 $font-size-huge: 2.5vw;
 //48px
 $font-size-biggest: 3.4vw;
+//police pour n° d'erreur 288px
+$font-size-error: 20vw;
 
 
 // Tailles de police pour base écran 375px (ici en vw)

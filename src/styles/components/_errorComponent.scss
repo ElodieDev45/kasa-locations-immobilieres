@@ -1,19 +1,21 @@
 .error {
     &-body{
-        margin-bottom: 14vw;
+        margin-bottom: 12vw;
         
-        img{
-            width: 41vw;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+        &__number{
+            width: -moz-fit-content;
+            width: fit-content;
+            height: max-content;
+            margin: 0 auto;
+            font-size: $font-size-error;
+            font-weight: $font-bold;
         }
         
-        h1{
+        &__text{
             width: -moz-fit-content;
             width: fit-content;
             font-size: $font-size-huge;
-            margin: 6vw auto;
+            margin: 3vw auto;
             font-weight: $font-medium;
         }
     }
@@ -21,6 +23,7 @@
     &-component a {
         color: $primary-color;
         font-size: $font-size-large;
+        font-weight: $font-medium;
     }
 }
     
