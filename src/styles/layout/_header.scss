@@ -3,11 +3,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
-    min-height: 10vw;
+    margin: 3vw auto 1.2vw;
+    height: 4.75vw;
     
     &-logo {
-        width: 16.5%;
+        width: 17%;
+        height: 100%;
     }
       
     &-nav {
