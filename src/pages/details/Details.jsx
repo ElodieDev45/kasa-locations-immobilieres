@@ -6,10 +6,7 @@ import datasLogements from '../../datas/logements.json'
 
 function Details() {
     const idLogement =  new URLSearchParams(window.location.search).get('id');
-    console.log('id logement :', idLogement);
-    
     const logementInfos = datasLogements.find((logement) => logement.id === idLogement)
-    console.log('infos logement :', logementInfos);
     
     return(
         <div id="Details">
