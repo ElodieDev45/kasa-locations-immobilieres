@@ -22,6 +22,7 @@ function About() {
                 <article>
                     {aboutDatas.map(({id, Reliability}) => (
                         <Dropdown 
+                            key={id}
                             id={id}
                             title="Fiabilité"
                             content={Reliability}
@@ -31,6 +32,7 @@ function About() {
                 <article>
                     {aboutDatas.map(({id, Respect}) => (
                         <Dropdown 
+                            key={id}
                             id={id}
                             title="Respect"
                             content={Respect}
@@ -40,6 +42,7 @@ function About() {
                 <article>
                     {aboutDatas.map(({id, Service}) => (
                         <Dropdown 
+                            key={id}
                             id={id}
                             title="Service"
                             content={Service}
@@ -49,6 +52,7 @@ function About() {
                 <article>
                     {aboutDatas.map(({id, Security}) => (
                         <Dropdown 
+                            key={id}
                             id={id}
                             title="Sécurité"
                             content={Security}
