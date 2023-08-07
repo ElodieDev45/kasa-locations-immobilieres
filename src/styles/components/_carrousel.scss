@@ -1,10 +1,29 @@
 .carrousel {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 100%;
+    margin: 0;
     
-    figure {
+    &-pct {
+        position: absolute;
+        z-index: 0;
         display: flex;
-        align-items: center;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: $radius-regular;
+    }
+
+    &-slider {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 96%;
         height: 100%;
         margin: 0;
         
@@ -12,35 +31,31 @@
             background-color: $quintenary-color;
             padding: 0;
             border: none;
-            position: absolute;
-            z-index: 1;
-            left: 12vw;
             
             .scrollPrevious {
-                height: 6vw;
+                height: 5.5vw;
+                margin-bottom: 2.5vw;
             }
         } 
 
-        .pctLogement {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: $radius-regular;
-        }
-        
         #next {
             background-color: $quintenary-color;
             padding: 0;
             border: none;
-            position: absolute;
-            z-index: 1;
-            right: 12vw;
 
             .scrollNext {
-                height: 6vw;
+                height: 5.5vw;
+                margin-bottom: 2.5vw;
             }
+        }
+
+        &__index {
+            color: $secondary-color;
+            font-size: $font-size-large;
+            font-weight: $font-medium;
+            line-height: $text-line-height-1;
+            align-self: end;
+            margin: 0 auto 1.7vw
         }
     }
 }

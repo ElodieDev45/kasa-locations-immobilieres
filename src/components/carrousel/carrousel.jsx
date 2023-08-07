@@ -17,17 +17,18 @@ function Carrousel({datasid, title, pictures}) {
     };
 
     return (
-        <div className="carrousel" key={datasid}>
-            <figure>
-                <button onClick={handlePrevious} id='previous' ><img src={previous} className='scrollPrevious' alt='flèche précédent'/></button>
+        <figure className="carrousel" key={datasid}>
                 <img
                     src={pictures[index]}
                     alt={`aperçu du logement ${title}`}
-                    className='pctLogement'
+                    className='carrousel-pct'
                 />
-                <button onClick={handleNext} id='next'><img src={next} className='scrollNext' alt='flèche suivant'/></button>
-            </figure>
-        </div>
+                <div className="carrousel-slider">
+                    <button onClick={handlePrevious} id='previous' ><img src={previous} className='scrollPrevious' alt='flèche précédent'/></button>
+                    <p className="carrousel-slider__index">{index+1}/{length}</p>
+                    <button onClick={handleNext} id='next'><img src={next} className='scrollNext' alt='flèche suivant'/></button>
+                </div>
+        </figure>
     )
 }
 
