@@ -2,7 +2,7 @@ import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
 import Footer from '../../components/footer/footer'
-import imgBanner from '../../assets/banner-home.png'
+import imgBanner from '../../assets/banner-home-desktop.avif'
 import logements from '../../datas/logements.json'
 
 

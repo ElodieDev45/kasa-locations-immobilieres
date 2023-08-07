@@ -1,7 +1,7 @@
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import Banner from '../../components/banner/banner'
-import imgAbout from '../../assets/banner-about.png'
+import imgAbout from '../../assets/banner-about-desktop.avif'
 import aboutDatas from '../../datas/about.json'
 import Dropdown from '../../components/dropdown/dropdown'
 
