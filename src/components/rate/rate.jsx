@@ -1,6 +1,6 @@
 function Rate({datasid, rating}){
     return (
-        <div class="rate-stars" key={datasid}>
+        <div className="rate-stars" key={datasid}>
             <p className={rating >= 1 ? "active" : "pending"}>
                 <i className="fa-solid fa-star"></i>
             </p>
