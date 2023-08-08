@@ -17,17 +17,14 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        height: min-content;
     }
     
     &-menu {
         background-color: $primary-color;
         display: flex;
         align-items: center;
-        min-height: 3.6vw;
         width: 100%;
-        height: 20%;
-        max-height: 1.6vw;
+        height: 100%;
         border-radius: $radius-midi;
         margin: 0;
         padding: 0;

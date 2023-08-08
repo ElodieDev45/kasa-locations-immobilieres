@@ -5,6 +5,14 @@
     height: 24vw;
     max-height: 340px;
 
+    @include mobile{
+        width: 89vw;
+        max-width: 335px;
+        height: 68vw;
+        max-height: 255px;
+    }
+
+
     &::before {
         content: "";
         position: absolute;
