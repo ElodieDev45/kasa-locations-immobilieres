@@ -2,6 +2,10 @@
     header{
         width: 86%;
         margin: 0 auto;
+
+        @include mobile{
+            width: 89.3%;
+        }
     }
 
     .main-error {
@@ -9,6 +13,39 @@
         margin: 12vw auto;
         text-align: center;
         color: $primary-color;
+
+        @include mobile{
+            width: 89,3%;
+            margin: 45vw auto;
+        }
+
+        .error{
+            &-body{
+                @include mobile{
+                    margin-bottom: 30vw;
+                }
+
+                &__number{
+                    @include mobile{
+                        font-size: $font-size-mb-error;
+                    }
+                }
+
+                &__text{
+                    @include mobile{
+                        font-size: $font-size-mb-huge;
+                        width:69.5vw;
+                        line-height: $text-line-height-1;
+                    }
+                }
+           }
+
+           &-component a{
+                @include mobile{
+                    font-size: $font-size-mb-medium
+                }
+           }
+        }
     }
 
     footer {
