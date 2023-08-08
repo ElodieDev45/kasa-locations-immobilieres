@@ -2,7 +2,6 @@ import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
 import Footer from '../../components/footer/footer'
-import imgBanner from '../../assets/banner-home-desktop.avif'
 import logements from '../../datas/logements.json'
 
 
@@ -14,8 +13,6 @@ function Home() {
             </header>
             <section className='Home-banner'>
                 <Banner 
-                    img={imgBanner}
-                    alt={'paysage de falaise'}
                     title={'Chez vous, partout et ailleurs'}
                 />
             </section>

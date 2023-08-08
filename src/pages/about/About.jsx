@@ -1,7 +1,6 @@
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import Banner from '../../components/banner/banner'
-import imgAbout from '../../assets/banner-about-desktop.avif'
 import aboutDatas from '../../datas/about.json'
 import Dropdown from '../../components/dropdown/dropdown'
 
@@ -14,8 +13,6 @@ function About() {
             </header>
             <section className='About-banner'>
                 <Banner 
-                    img={imgAbout}
-                    alt={'paysage de montagne et rivière'}
                 />
             </section>
             <main className='About-dropdown'>

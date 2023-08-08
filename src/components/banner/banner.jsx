@@ -1,8 +1,7 @@
-function Banner({img, alt, title}) {
+function Banner({title}) {
     return (
       <div className='Banner'>
         <h1>{title}</h1>
-        <img src={img} alt={alt} className='Banner-img' />
       </div>
     );
   }
