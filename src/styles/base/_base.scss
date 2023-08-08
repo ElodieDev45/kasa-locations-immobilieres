@@ -5,7 +5,7 @@ body{
     font-weight: $font-medium;
 
     @include mobile{
-        max-width: 375px;
+        min-width: 325px;
         margin: 0 auto;
     }
 }
