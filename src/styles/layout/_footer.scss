@@ -6,15 +6,35 @@
     background-color: $quaternary-color;
     width:100%;
     height: 14vw;
+
+    @include mobile {
+        height: 55.7vw;
+        justify-content: center;
+    }
     
     &-logo{
         margin: 1.5vw;
         width: 8.5vw;
+
+        @include mobile {
+            width: 32.6vw;
+            margin: 0;
+        }
     }
     
     &-AllRights {
         padding: 0 5%;
         font-size: $font-size-extra-large;
         color: $secondary-color;
+
+        @include mobile{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100%;
+            height: 12.3vw;
+            margin: 0;
+            font-size: $font-size-mb-large;
+        }
     }
 }

@@ -5,16 +5,30 @@
     justify-content: space-between;
     margin: 3vw auto 1.2vw;
     height: 4.75vw;
+
+    @include mobile{
+        height: 12.5vw;
+        margin: 5vw auto 2.2vw;
+    }
     
     &-logo {
-        width: 17%;
+        width: 14.6vw;
         height: 100%;
+
+        @include mobile{
+            width: 38.7vw;
+        }
     }
       
     &-nav {
         width: 40%;
         font-size: $font-size-huge;
         color: $primary-color;
+
+        @include mobile {
+            width: 55%;
+        }
+
         
         ul {
             display: flex;
@@ -23,9 +37,15 @@
             gap: 2em;
             list-style-type: none;
         }
-      
+        
         li {
             font-size: $font-size-extra-large;
+            
+            @include mobile {
+                font-size: $font-size-mb-large;
+                text-transform: uppercase;
+            }
+
             a{
                 text-decoration: none;
                 color: $primary-color;
