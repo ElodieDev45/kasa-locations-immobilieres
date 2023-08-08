@@ -47,12 +47,16 @@ $font-size-error: 20vw;
 
 // Tailles de police pour base écran 375px (ici en vw)
 //10px
-$font-size-smallest: 10px;
+$font-size-mb-medium-small: 2.7vw;
 //12px
-$font-size-extra-small:12px;
+$font-size-mb-large: 3.2vw;
 //13px
-$font-size-small: 13px;
-//16px
-$font-size-medium: 16px;
-//20px
-$font-size-medium-large: 20px;
+$font-size-mb-extra-large: 3.5vw;
+//14px
+$font-size-mb-medium: 3.75vw;
+//18px
+$font-size-mb-huge: 4.8vw;
+//24px
+$font-size-mb-biggest: 6.4vw;
+//police pour n° d'erreur 96px
+$font-size-mb-error: 26.7vw;
