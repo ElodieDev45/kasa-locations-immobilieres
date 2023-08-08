@@ -5,6 +5,7 @@
     flex-direction: row-reverse;
     margin: 0;
     height: 100%;
+    border-radius: $radius-regular;
 
     &::after {
         content: "";
@@ -15,15 +16,10 @@
         left: 0;
         border-radius: $radius-regular;
         background: $quaternary-color-bkg;
-    }
-
-    &-img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: $radius-regular;
+        
+        @include mobile{
+            border-radius: $radius-midi;
+        }
     }
 
     h1 {
