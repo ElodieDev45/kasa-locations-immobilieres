@@ -2,11 +2,31 @@
     header, .About-banner, .About-dropdown {
         width: 86%;
         margin: 0 auto;
+
+        @include mobile{
+            width: 89.3%;
+        }
     }
 
     .About-banner{
         padding: 2vw 0 2vw;
         height: 15.5vw;
+
+        @include mobile{
+            height: 59.5vw;
+            padding: 3vw 0 4vw;
+        }
+
+        .Banner {
+            background-image: url('../../assets/banner-about-desktop.avif');
+            background-size: cover;
+            background-position: center;
+        
+            @include mobile {
+                background-image: url('../../assets/banner-about-mobile.avif');
+                border-radius: $radius-midi;            
+            }
+        }
     }
 
     main.Dropdown {
@@ -16,10 +36,20 @@
     .About-dropdown {
         padding-bottom: 10vw;
 
+        @include mobile {
+            padding-bottom: 30vw;
+        }
+
         article{
-            width: 83%;
+            width: 82.6%;
+            height: 100%;
             margin: 0 auto;
             padding-bottom: 2vw;
+
+            @include mobile {
+                width: 100%;
+                padding-bottom: 5vw;
+            }
 
             .dropdown {
                 width: 100%;
@@ -27,16 +57,30 @@
                 
                 &-menu {
                     border-radius: $radius-mini;
+                    height: 3.3vw;
+
+                    @include mobile{
+                        height: 8vw;
+                    }
                     
                     h2 {
                         width: 90%;
                         font-size: $font-size-extra-large;
+                    
+                        @include mobile {
+                            font-size: $font-size-mb-extra-large;
+                            padding-left: 3vw;
+                        }
                     }
                 }
                 
                 &-menuImg {
                     width: 10%;
-                    height: 3.6vw;
+                    height: 2.25vw;
+
+                    @include mobile{
+                        height: 4.8vw;
+                    }
                 }
                 
                 &-content {
@@ -45,11 +89,22 @@
                     border-radius: $radius-mini;
                     height: max-content;
                     min-height: inherit;
+
+                    @include mobile {
+                        font-size: $font-size-mb-large;
+                        font-weight: $font-regular;
+                        top: -2vw;
+                        min-height: 38.3vw;
+                    }
                     
                     p {
                         margin: 0;
                         padding: 3vw 1.5vw 1vw;
                         line-height: $text-line-height-1;
+                    
+                        @include mobile {
+                            padding: 7vw 3vw 1vw;
+                        }
                     }
                 }
             }

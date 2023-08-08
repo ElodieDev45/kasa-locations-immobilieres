@@ -3,14 +3,44 @@
     header, .Home-banner{
         width: 86%;
         margin: 0 auto;
+
+        @include mobile{
+            width: 89.3%;
+        }
     }
 
     .Home-banner{
         padding: 2vw 0 3vw;
         height: 15.5vw;
+        
+        @include mobile{
+            width: 89.3%;
+            height: 29.5vw;
+            padding: 2vw 0 6vw;
+        }
 
         h1{
             text-align: center;
+
+            @include mobile{
+                width: 65%;
+                text-align: left;
+                font-size: $font-size-mb-biggest;
+                left: 3vw;
+                line-height: $text-line-height-3;
+            }
+        }
+        
+        .Banner {
+            background-image: url('../../assets/banner-home-desktop.avif');
+            background-size: 100%;
+            background-position: center;
+        
+            @include mobile{
+                background-size: 180%;
+                background-position: center;
+                border-radius: $radius-midi;
+            }
         }
     }
 
@@ -22,6 +52,13 @@
         flex-wrap: wrap;
         border-radius: $radius-regular;
 
+        @include mobile{
+            width: 89.3%;
+            flex-wrap: nowrap;
+            border-radius: $radius-midi;
+            margin: 0 auto 12vw auto;
+        }
+
         ul {
             list-style-type: none;
             display: flex;
@@ -31,6 +68,13 @@
             width: 100%;
             padding: 0;
             margin: 4vw 3vw;
+
+            @include mobile{
+                flex-wrap: nowrap;
+                flex-direction: column;
+                margin: 0;
+                row-gap: 5vw;
+            }
         }
 
         a {
@@ -38,6 +82,26 @@
             max-width: 340px;
             height: 24vw;
             max-height: 340px;
+
+            @include mobile{
+                width: 89.3vw;
+                max-width: 335px;
+                height: 68vw;
+                max-height: 255px;
+            }
+
+            .Card {
+                @include mobile{
+                    width: 100%;
+                }
+                h3{
+                    @include mobile {
+                        font-size: $font-size-mb-huge; 
+                        padding: 0 4vw 4vw 4vw;
+                        width: 48%;
+                    }
+                }
+            }
         }
     }
 
