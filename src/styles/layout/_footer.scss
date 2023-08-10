@@ -1,24 +1,19 @@
-.Footer {
-    position: absolute;
-    bottom: 0;
+.Footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    height: 14vw;
+    width: auto;
+    height: 100%;
     background-color: $quaternary-color;
 
 
     @include mobile {
-        width: 100%;
-        height: 55.7vw;
-        // margin: 0 auto;
         justify-content: center;
     }
-    
+
     &-logo{
-        margin: 1.5vw;
+        margin: 1vw;
         width: 8.5vw;
 
         @include mobile {
@@ -28,15 +23,20 @@
     }
     
     &-AllRights {
-        padding: 0 5%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         font-size: $font-size-extra-large;
         color: $secondary-color;
+        width: auto;
+        height: 3.2vw;
+        margin: 1vw 0 2vw;
 
         @include mobile{
             display: flex;
-            align-items: flex-end;
             justify-content: center;
-            width: 100%;
+            align-items: flex-end;
+            width: auto;
             height: 12.3vw;
             margin: 0;
             font-size: $font-size-mb-large;

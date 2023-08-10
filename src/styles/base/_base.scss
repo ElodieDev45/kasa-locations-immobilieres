@@ -8,13 +8,11 @@ body{
     -moz-osx-font-smoothing: grayscale;  
 
     #root{
-        width: 100%;
         min-height: 100vh;
         margin: 0 auto;
 
         #Home, #Details, #About, #error404 {
             position: relative;
-            width: 100%;
             max-width: 1440px;
             min-height: 100vh;
             margin: 0 auto;
@@ -22,6 +20,20 @@ body{
 
             @include mobile {
                 padding-bottom: 55.7vw;
+            }
+
+            footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                max-width: 1440px;
+                height: 14.5vw;
+                margin: 0;
+            
+                @include mobile {
+                    height: 55.7vw;
+                }
             }
         }
     }
