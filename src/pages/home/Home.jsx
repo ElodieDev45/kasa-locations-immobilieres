@@ -18,12 +18,12 @@ function Home() {
             </section>
             <main className='Cards'>
                 <ul>
-                    {logements.map(({id, title, cover}) => (
-                        <a href={'http://localhost:3000/Details?id='+ id} key={id}>
+                    {logements.map((item) => (
+                        <a href={'/details/'+ item.id} key={item.id}>
                             <Card 
-                                datasid={id}
-                                titleCard={title}
-                                coverCard={cover}
+                                datasid={item.id}
+                                titleCard={item.title}
+                                coverCard={item.cover}
                             />
                         </a>
                     ))}

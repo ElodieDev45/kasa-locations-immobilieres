@@ -175,6 +175,8 @@
                     }
                     
                     &-menu{
+                        height: 3.6vw;
+
                         @include mobile{
                             height: 8vw;
                             border-radius:$radius-mini;
@@ -225,7 +227,6 @@
             }
         }
     }
-
 
     footer {
         width: 100%;
