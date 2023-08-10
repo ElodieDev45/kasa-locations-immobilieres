@@ -22,7 +22,6 @@
       
     &-nav {
         width: 40%;
-        font-size: $font-size-huge;
         color: $primary-color;
 
         @include mobile {
@@ -34,13 +33,17 @@
             display: flex;
             flex-direction: row;
             justify-content: right;
-            gap: 2em;
+            gap: 3vw;
             list-style-type: none;
         }
         
         li {
             font-size: $font-size-extra-large;
             white-space : nowrap;
+
+            @include tablet {
+                font-size: $font-size-tb-extra-large;
+            }
 
             
             @include mobile {

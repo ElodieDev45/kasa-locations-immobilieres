@@ -32,6 +32,10 @@
         height: 3.2vw;
         margin: 1vw 0 2vw;
 
+        @include tablet {
+            font-size: $font-size-tb-extra-large;
+        }
+
         @include mobile{
             display: flex;
             justify-content: center;
