@@ -7,9 +7,12 @@
     height: 100%;
     background-color: $quaternary-color;
 
-
     @include mobile {
         justify-content: center;
+    }
+
+    @include maxi {
+        max-height: 254px;
     }
 
     &-logo{
@@ -19,6 +22,12 @@
         @include mobile {
             width: 32.6vw;
             margin: 0;
+        }
+
+        @include maxi {
+            max-width: 148px;
+            max-height: 48px;
+            margin: 17.5px;
         }
     }
     
@@ -44,6 +53,12 @@
             height: 12.3vw;
             margin: 0;
             font-size: $font-size-mb-large;
+        }
+
+        @include maxi {
+            font-size: $font-size-max-extra-large;
+            height: 56px;
+            margin: 17.5px 0 35px;
         }
     }
 }

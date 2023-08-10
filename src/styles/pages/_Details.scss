@@ -72,6 +72,10 @@
                     white-space: normal;
                     align-items: center;
                 }
+
+                @include maxi {
+                    font-size: $font-size-max-huge;
+                }
             }
             
             &__location{
@@ -85,6 +89,10 @@
                     font-size: $font-size-mb-medium;
                     height: auto;
                     padding: 1.5vw 0 0.5vw;
+                }
+
+                @include maxi {
+                    font-size: $font-size-max-large;
                 }
             }
             &__tags{
@@ -116,6 +124,10 @@
                             min-width: 20.4vw;
                             height: 4.8vw;
                             font-size: $font-size-mb-medium-small;
+                        }
+
+                        @include maxi {
+                            font-size: $font-size-max-medium-small;
                         }
                     }
                 }
@@ -176,6 +188,11 @@
                             height: 100%;
                             width: 21vw;
                       }
+
+                      @include maxi {
+                        font-size: $font-size-max-large;
+                      }
+
                     }
 
                     &-img img{
@@ -238,6 +255,10 @@
                             font-size: $font-size-mb-extra-large;
                             padding-left: 3vw;
                         }
+
+                        @include maxi {
+                            font-size: $font-size-max-large;
+                        }
                     }
                     
                     &-menuImg{
@@ -268,6 +289,10 @@
                                 padding: 6vw 2.5vw 2.5vw;
                                 font-size: $font-size-mb-large;
                             }
+
+                            @include maxi {
+                                font-size: $font-size-max-large;
+                            }
                         }
             
                         p {
@@ -281,6 +306,10 @@
                             @include mobile{
                                 padding: 6vw 2.5vw 2.5vw;
                                 font-size: $font-size-mb-large;
+                            }
+
+                            @include maxi {
+                                font-size: $font-size-max-large;
                             }
                         }
                     }

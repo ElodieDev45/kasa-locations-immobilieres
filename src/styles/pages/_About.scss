@@ -17,6 +17,11 @@
             padding: 3vw 0 4vw;
         }
 
+        @include maxi{
+            max-height: 272px;
+            padding: 35px 0;
+        }
+
         .Banner {
             background-image: url('../../assets/banner-about-desktop.avif');
             background-size: cover;
@@ -29,15 +34,15 @@
         }
     }
 
-    main.Dropdown {
-        margin: 0 auto 3vw;
-    }
-
     .About-dropdown {
         padding-bottom: 10vw;
 
         @include mobile {
             padding-bottom: 30vw;
+        }
+
+        @include maxi {
+            padding-bottom: 175px;
         }
 
         article{
@@ -51,6 +56,10 @@
                 padding-bottom: 5vw;
             }
 
+            @include maxi {
+                padding-bottom: 35px;
+            }
+
             .dropdown {
                 width: 100%;
                 padding: 0;
@@ -61,6 +70,10 @@
 
                     @include mobile{
                         height: 8vw;
+                    }
+
+                    @include maxi {
+                        max-height: 58px;
                     }
                     
                     h2 {
@@ -75,6 +88,10 @@
                             font-size: $font-size-mb-extra-large;
                             padding-left: 3vw;
                         }
+
+                        @include maxi {
+                            font-size: $font-size-max-extra-large;
+                        }
                     }
                 }
                 
@@ -84,6 +101,11 @@
 
                     @include mobile{
                         height: 4.8vw;
+                    }
+
+                    @include maxi {
+                        max-width: 99px;
+                        max-height: 39px;
                     }
                 }
                 
@@ -104,6 +126,11 @@
                         top: -2vw;
                         min-height: 38.3vw;
                     }
+
+                    @include maxi {
+                        font-size: $font-size-max-extra-large;
+                        top: -18px;
+                    }
                     
                     p {
                         margin: 0;
@@ -112,6 +139,10 @@
                     
                         @include mobile {
                             padding: 7vw 3vw 1vw;
+                        }
+
+                        @include maxi {
+                            padding: 53px 26px 18px;
                         }
                     }
                 }

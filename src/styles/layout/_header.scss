@@ -5,10 +5,15 @@
     justify-content: space-between;
     margin: 3vw auto 1.2vw;
     height: 4.75vw;
-
+    
     @include mobile{
         height: 12.5vw;
-        margin: 5vw auto 2.2vw;
+        margin: 52px auto 21px;
+    }
+
+    @include maxi {
+        height: 83px;
+        margin: 53px auto 21px;
     }
     
     &-logo {
@@ -17,6 +22,11 @@
 
         @include mobile{
             width: 38.7vw;
+        }
+
+        @include maxi {
+            max-width: 256px;
+            max-height: 83px;
         }
     }
       
@@ -44,11 +54,14 @@
             @include tablet {
                 font-size: $font-size-tb-extra-large;
             }
-
             
             @include mobile {
                 font-size: $font-size-mb-large;
                 text-transform: uppercase;
+            }
+
+            @include maxi {
+                font-size: $font-size-max-extra-large;
             }
 
             a{
