@@ -40,6 +40,8 @@
         
         li {
             font-size: $font-size-extra-large;
+            white-space : nowrap;
+
             
             @include mobile {
                 font-size: $font-size-mb-large;
