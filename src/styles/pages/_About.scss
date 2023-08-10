@@ -67,6 +67,10 @@
                         width: 90%;
                         font-size: $font-size-extra-large;
                     
+                        @include tablet {
+                            font-size: $font-size-tb-medium;
+                        }
+
                         @include mobile {
                             font-size: $font-size-mb-extra-large;
                             padding-left: 3vw;
@@ -89,6 +93,10 @@
                     border-radius: $radius-mini;
                     height: max-content;
                     min-height: inherit;
+
+                    @include tablet {
+                        font-size: $font-size-tb-extra-large;
+                    }
 
                     @include mobile {
                         font-size: $font-size-mb-large;

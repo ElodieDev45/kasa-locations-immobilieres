@@ -22,6 +22,10 @@
         h1{
             text-align: center;
 
+            @include tablet{
+                font-size: $font-size-tb-biggest;
+            }
+
             @include mobile{
                 width: 65%;
                 text-align: left;
@@ -105,6 +109,10 @@
                 }
 
                 h3{
+                    @include tablet {
+                        font-size: $font-size-tb-extra-large;
+                    }
+
                     @include mobile {
                         font-size: $font-size-mb-huge; 
                         padding: 0 4vw 4vw 4vw;

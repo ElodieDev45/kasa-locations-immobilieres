@@ -26,12 +26,20 @@
                 }
 
                 &__number{
+                    @include tablet {
+                        font-size: $font-size-tb-error;
+                    }
+
                     @include mobile{
                         font-size: $font-size-mb-error;
                     }
                 }
 
                 &__text{
+                    @include tablet {
+                        font-size: $font-size-tb-huge;
+                    }
+
                     @include mobile{
                         font-size: $font-size-mb-huge;
                         width:69.5vw;
@@ -41,6 +49,10 @@
            }
 
            &-component a{
+                @include tablet {
+                    font-size: $font-size-tb-large;
+                }
+
                 @include mobile{
                     font-size: $font-size-mb-medium
                 }
