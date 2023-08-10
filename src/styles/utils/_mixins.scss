@@ -9,3 +9,9 @@
         @content;
     }
 }
+
+@mixin maxi{
+    @media all and (min-width: $breakpoint-fontmax){
+        @content;
+    }
+}
