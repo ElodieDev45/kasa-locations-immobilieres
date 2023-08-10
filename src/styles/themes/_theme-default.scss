@@ -79,16 +79,17 @@ $font-size-mb-biggest: 6.4vw;
 //police pour n° d'erreur 96px
 $font-size-mb-error: 26.7vw;
 
-// Tailles de police MAXIMUM pour écran supérieur à 1440px (ici en vw)
-//14px
-$font-size-max-medium-small: 1vw;
-//18px
-$font-size-max-large: 1.3vw;
-//24px
-$font-size-max-extra-large: 1.7vw;
-//36px
-$font-size-max-huge: 2.5vw;
-//48px
+
+// Tailles de police MAXIMUM pour écran supérieur à 1750px (ici en px)
+//1vw
+$font-size-max-medium-small: 18px;
+//1.3vw
+$font-size-max-large: 23px;
+//1.7vw
+$font-size-max-extra-large: 30px;
+//2.5vw
+$font-size-max-huge: 44px;
+//3.4vw
 $font-size-max-biggest: 60px;
-//police pour n° d'erreur 288px
-$font-size-max-error: 20vw;
+//police pour n° d'erreur 20vw
+$font-size-max-error: 350px;
