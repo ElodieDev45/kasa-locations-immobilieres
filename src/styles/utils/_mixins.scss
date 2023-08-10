@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin tablet{
+    @media all and (max-width: $breakpoint-tablet){
+        @content;
+    }
+}
