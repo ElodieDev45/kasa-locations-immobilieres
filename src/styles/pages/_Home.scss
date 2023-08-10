@@ -47,16 +47,16 @@
     .Cards {
         background-color: $tertiary-color;
         width: 86%;
-        margin: 0 auto;
+        margin: 0 auto 4vw;
         display: flex;
         flex-wrap: wrap;
         border-radius: $radius-regular;
 
         @include mobile{
+            background-color: initial;
             width: 89.3%;
-            flex-wrap: nowrap;
+            margin: 0 auto 9vw;
             border-radius: $radius-midi;
-            margin: 0 auto 12vw auto;
         }
 
         ul {
@@ -70,10 +70,8 @@
             margin: 4vw 3vw;
 
             @include mobile{
-                flex-wrap: nowrap;
                 flex-direction: column;
                 margin: 0;
-                row-gap: 5vw;
             }
         }
 
@@ -84,16 +82,28 @@
             max-height: 340px;
 
             @include mobile{
-                width: 89.3vw;
-                max-width: 335px;
+                width: 100%;
+                max-width: initial;
                 height: 68vw;
-                max-height: 255px;
+                border-radius: $radius-midi;
             }
 
             .Card {
                 @include mobile{
                     width: 100%;
+                    max-width: initial;
+                    height: 100%;
+                    border-radius: $radius-midi;
                 }
+
+                &::before {
+                    @include mobile{
+                        width: 100%;
+                        max-width: initial;  
+                        border-radius: $radius-midi;  
+                    }
+                }
+
                 h3{
                     @include mobile {
                         font-size: $font-size-mb-huge; 
