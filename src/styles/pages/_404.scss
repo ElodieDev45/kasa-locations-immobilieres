@@ -1,4 +1,7 @@
 #error404{
+    min-height: 100vh;
+    padding-bottom: 20vw;
+
     header{
         width: 86%;
         margin: 0 auto;
@@ -49,6 +52,8 @@
     }
 
     footer {
+        position: absolute;
+        bottom: 0;
         width: 100%;
     }
 }
