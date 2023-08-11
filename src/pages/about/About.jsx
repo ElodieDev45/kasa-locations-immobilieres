@@ -19,6 +19,7 @@ function About() {
                 <article>
                     {aboutDatas.map((datas) => (
                         <Dropdown 
+                            key={datas.id}
                             datasid={datas.id}
                             title={datas.title}
                             content={datas.paragraph}
