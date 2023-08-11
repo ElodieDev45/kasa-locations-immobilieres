@@ -30,7 +30,7 @@ $font-medium: 500;
 $font-regular: 400;
 $font-bold: 700;
 
-// Tailles de police pour base écran 1440px (ici en vw)
+// Tailles de police DESKTOP pour base écran 1440px (ici en vw)
 //14px
 $font-size-medium-small: 1vw;
 //18px
@@ -45,7 +45,7 @@ $font-size-biggest: 3.4vw;
 $font-size-error: 20vw;
 
 
-// Tailles de police pour base écran 850px (ici en vw)
+// Tailles de police TABLET pour base écran 850px (ici en vw)
 //12px
 $font-size-tb-small: 1.5vw;
 //15px
@@ -63,7 +63,7 @@ $font-size-tb-biggest: 4vw;
 //police pour n° d'erreur 187px
 $font-size-tb-error: 22vw;
 
-// Tailles de police pour base écran 375px (ici en vw)
+// Tailles de police MOBILE pour base écran 375px (ici en vw)
 //10px
 $font-size-mb-medium-small: 2.7vw;
 //12px
@@ -80,7 +80,7 @@ $font-size-mb-biggest: 6.4vw;
 $font-size-mb-error: 26.7vw;
 
 
-// Tailles de police MAXIMUM pour écran supérieur à 1750px (ici en px)
+// Tailles de police MAXI pour écran supérieur à 1750px (ici en px)
 //1vw
 $font-size-max-medium-small: 18px;
 //1.3vw
