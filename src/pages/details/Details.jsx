@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 function Details() {
     const {id} =  useParams();
     const logementInfos = datasLogements.find((logement) => logement.id === id)
-    console.log(logementInfos);
+
     return(
         <div id="Details">
             <header>
