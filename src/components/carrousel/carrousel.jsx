@@ -17,7 +17,16 @@ function Carrousel({datasid, title, pictures}) {
     };
 
     return (
-        <figure className="carrousel" key={datasid}>
+        length === 1 ? (
+            <figure className="carrousel" key={datasid}>
+                <img
+                    src={pictures[index]}
+                    alt={`aperçu du logement ${title}`}
+                    className='carrousel-pct'
+                />
+            </figure>
+            ) : (
+            <figure className="carrousel" key={datasid}>
                 <img
                     src={pictures[index]}
                     alt={`aperçu du logement ${title}`}
@@ -28,7 +37,8 @@ function Carrousel({datasid, title, pictures}) {
                     <p className="carrousel-slider__index">{index+1}/{length}</p>
                     <button onClick={handleNext} id='next'><img src={next} className='scrollNext' alt='flèche suivant'/></button>
                 </div>
-        </figure>
+            </figure>
+        )
     )
 }
 
