@@ -46,6 +46,9 @@
         }
 
         article{
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
             width: 82.6%;
             height: 100%;
             margin: 0 auto;

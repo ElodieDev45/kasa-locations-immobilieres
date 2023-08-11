@@ -17,42 +17,11 @@ function About() {
             </section>
             <main className='About-dropdown'>
                 <article>
-                    {aboutDatas.map(({id, Reliability}) => (
+                    {aboutDatas.map((datas) => (
                         <Dropdown 
-                            key={id}
-                            id={id}
-                            title="Fiabilité"
-                            content={Reliability}
-                        />
-                    ))}
-                </article>
-                <article>
-                    {aboutDatas.map(({id, Respect}) => (
-                        <Dropdown 
-                            key={id}
-                            id={id}
-                            title="Respect"
-                            content={Respect}
-                        />
-                    ))}
-                </article>
-                <article>
-                    {aboutDatas.map(({id, Service}) => (
-                        <Dropdown 
-                            key={id}
-                            id={id}
-                            title="Service"
-                            content={Service}
-                        />
-                    ))}
-                </article>
-                <article>
-                    {aboutDatas.map(({id, Security}) => (
-                        <Dropdown 
-                            key={id}
-                            id={id}
-                            title="Sécurité"
-                            content={Security}
+                            datasid={datas.id}
+                            title={datas.title}
+                            content={datas.paragraph}
                         />
                     ))}
                 </article>
