@@ -9,7 +9,6 @@ function Details() {
     const navigate = useNavigate();
     const {id} =  useParams();
     const logementInfos = datasLogements.find((logement) => logement.id === id);
-    console.log(logementInfos);
 
     useEffect(() =>{
         if (!logementInfos) {
