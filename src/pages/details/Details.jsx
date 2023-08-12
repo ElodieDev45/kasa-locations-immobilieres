@@ -2,12 +2,24 @@ import Header from '../../components/header/header'
 import FicheLogement from '../../components/ficheLogement/ficheLogement'
 import Footer from '../../components/footer/footer'
 import datasLogements from '../../datas/logements.json'
-import { useParams } from 'react-router-dom';
-
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Details() {
+    const navigate = useNavigate();
     const {id} =  useParams();
-    const logementInfos = datasLogements.find((logement) => logement.id === id)
+    const logementInfos = datasLogements.find((logement) => logement.id === id);
+    console.log(logementInfos);
+
+    useEffect(() =>{
+        if (!logementInfos) {
+            navigate('*');
+        }
+    }, [logementInfos, navigate]);
+
+    if (!logementInfos) {
+        return null;
+    }
 
     return(
         <div id="Details">
