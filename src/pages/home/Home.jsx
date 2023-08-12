@@ -1,17 +1,21 @@
+//import fichier de données au format json
+import logements from '../../datas/logements.json'
+//import composants
 import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
 import Footer from '../../components/footer/footer'
-import logements from '../../datas/logements.json'
 
 
 function Home() {
     return(
         <div id="Home">
             <header>
+                {/* intégration de l'en-tête */}
                 <Header />
             </header>
             <section className='Home-banner'>
+                {/* intégration du composant de la bannière image (image en background SCSS) */}
                 <Banner 
                     title={'Chez vous, partout et ailleurs'}
                 />
@@ -19,7 +23,9 @@ function Home() {
             <main className='Cards'>
                 <ul>
                     {logements.map((item) => (
+                    //parcours des données du fichier
                         <a href={'/details/'+ item.id} key={item.id}>
+                            {/* intégration du composant de logement unitaire */}
                             <Card 
                                 datasid={item.id}
                                 titleCard={item.title}
@@ -30,6 +36,7 @@ function Home() {
                 </ul>
             </main>
             <footer>
+                {/* intégration du composant de pied de page */}
                 <Footer />
             </footer>
         </div>

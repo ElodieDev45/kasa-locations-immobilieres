@@ -1,7 +1,9 @@
+//import des composants
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import ErrorComponent from '../../components/errorComponent/errorComponent'
 
+//affichage page d'erreur code HTTP 404
 function Error404() {
     return(
         <div id="error404">
