@@ -3,19 +3,22 @@
         width: 86%;
         margin: 0 auto;
 
+        //modifications du style pour les media queries
         @include mobile{
             width: 89.3%;
         }
     }
 
+    //corps de la page d'erreur : style, dimenseionnement et positionnement
     .main-error {
         width: 86%;
         margin: 12vw auto;
         text-align: center;
         color: $primary-color;
 
+        //modifications du style pour les media queries
         @include mobile{
-            width: 89,3%;
+            width: 89.3%;
             margin: 45vw auto;
         }
 
@@ -23,7 +26,9 @@
             margin: 210px auto;
         }
 
+        //composant erreur : modifications du style pour les media queries de la page
         .error{
+            //corps
             &-body{
                 @include mobile{
                     margin-bottom: 30vw;
@@ -33,6 +38,7 @@
                     margin-bottom: 210px;
                 }
 
+                //code erreur
                 &__number{
                     @include tablet {
                         font-size: $font-size-tb-error;
@@ -47,6 +53,7 @@
                     }
                 }
 
+                //texte d'erreur
                 &__text{
                     @include tablet {
                         font-size: $font-size-tb-huge;
@@ -65,6 +72,7 @@
                 }
            }
 
+           //lien vers la page d'accueil
            &-component a{
                 @include tablet {
                     font-size: $font-size-tb-large;

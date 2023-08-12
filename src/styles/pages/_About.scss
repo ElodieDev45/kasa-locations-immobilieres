@@ -1,17 +1,23 @@
+//styles page A propos
+
 #About{
+    //largeur en-tête, banière et dropdown
     header, .About-banner, .About-dropdown {
         width: 86%;
         margin: 0 auto;
 
+        //modifications du style pour les media queries
         @include mobile{
             width: 89.3%;
         }
     }
 
+    //dimensionnement bannière
     .About-banner{
         padding: 2vw 0 2vw;
         height: 15.5vw;
 
+        //modifications du style pour les media queries
         @include mobile{
             height: 59.5vw;
             padding: 3vw 0 4vw;
@@ -22,11 +28,13 @@
             padding: 35px 0;
         }
 
+        //image bannière background : import, dimmension et position
         .Banner {
             background-image: url('../../assets/banner-about-desktop.avif');
             background-size: cover;
             background-position: center;
         
+            //modifications image et style pour les media queries
             @include mobile {
                 background-image: url('../../assets/banner-about-mobile.avif');
                 border-radius: $radius-midi;            
@@ -34,9 +42,11 @@
         }
     }
 
+    //ajustements listes déroulantes
     .About-dropdown {
         padding-bottom: 10vw;
 
+        //modifications du style pour les media queries
         @include mobile {
             padding-bottom: 30vw;
         }
@@ -45,6 +55,7 @@
             padding-bottom: 175px;
         }
 
+        //chaque catégorie : dimensionnement
         article{
             display: flex;
             flex-direction: column;
@@ -53,6 +64,7 @@
             margin: 0 auto;
             padding-bottom: 2vw;
 
+            //modifications du style pour les media queries
             @include mobile {
                 width: 100%;
                 padding-bottom: 5vw;
@@ -63,14 +75,17 @@
                 padding-bottom: 35px;
             }
 
+            //liste déroulante : largeur
             .dropdown {
                 width: 100%;
                 padding: 0;
                 
+                //ajustement barre titre
                 &-menu {
                     border-radius: $radius-mini;
                     height: 3.3vw;
 
+                    //modifications du style pour les media queries
                     @include mobile{
                         height: 8vw;
                     }
@@ -79,10 +94,12 @@
                         max-height: 58px;
                     }
                     
+                    //ajustement taille texte titre
                     h2 {
                         width: 90%;
                         font-size: $font-size-extra-large;
                     
+                        //modifications du style pour les media queries
                         @include tablet {
                             font-size: $font-size-tb-medium;
                         }
@@ -98,10 +115,12 @@
                     }
                 }
                 
+                //ajustement fleches
                 &-menuImg {
                     width: 10%;
                     height: 2.25vw;
 
+                    //modifications du style pour les media queries
                     @include mobile{
                         height: 4.8vw;
                     }
@@ -112,6 +131,7 @@
                     }
                 }
                 
+                //contenu des listes
                 &-content {
                     font-size: $font-size-extra-large;
                     top: -1vw;
@@ -119,6 +139,7 @@
                     height: max-content;
                     min-height: inherit;
 
+                    //modifications du style pour les media queries
                     @include tablet {
                         font-size: $font-size-tb-extra-large;
                     }
@@ -135,11 +156,13 @@
                         top: -18px;
                     }
                     
+                    //ajustement texte paragraphe
                     p {
                         margin: 0;
                         padding: 3vw 1.5vw 1vw;
                         line-height: $text-line-height-1;
                     
+                        //modifications du style pour les media queries
                         @include mobile {
                             padding: 7vw 3vw 1vw;
                         }

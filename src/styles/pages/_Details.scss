@@ -1,36 +1,50 @@
+//page de détail d'un logement
+
 #Details{
+    //largeur en-tête et corps de la page
     header, main {
         width: 86%;
         margin: 0 auto;
 
+        //modifications du style pour les media queries
         @include mobile{
             width: 89.3%;
         }
     }
 
+    //dimensionnement, positionnement et ajustement fiche logement
     .ficheLogement {
+        
+        //zone carrousel : dimensionnement
         &-carrousel {
+            //modifications du style pour les media queries
             @include mobile{
                 height: 68vw;
                 margin-top: 6vw;
             }
 
+            //composant carrousel
             .carrousel{
+                //image carrousel
                 img{
+                    //modifications du style pour les media queries
                     @include mobile{
                         border-radius: $radius-midi;
-                    
                     }
                 }
 
+                //fleches de défilement et compteur
                 &-slider{
+                    //fleches
                     img{
+                        //modifications du style pour les media queries
                         @include mobile{
                             margin: 0;
                         }
                     }
-
+                    //compteur
                     &__index{
+                        //modifications du style pour les media queries
                         @include mobile{
                             display: none;
                         }
@@ -39,7 +53,9 @@
             }
         }
 
+        //zone en-tête fiche logement
         &-head {
+            //modifications du style pour les media queries
             @include tablet {
                 margin-top: 1.5vw;
                 align-items: flex-start;
@@ -54,7 +70,9 @@
                 align-items: center;
             }
             
+            //zone nom du logement
             &__name{
+                //modifications du style pour les media queries
                 @include tablet {
                     font-size: $font-size-tb-huge;
                     height: auto;
@@ -78,7 +96,9 @@
                 }
             }
             
+            //zone localisation du logement
             &__location{
+                //modifications du style pour les media queries
                 @include tablet {
                     font-size: $font-size-tb-large;
                     padding: 0 0 1.5vw;
@@ -95,7 +115,11 @@
                     font-size: $font-size-max-large;
                 }
             }
+
+            //
+            //zone de mots clés du logement
             &__tags{
+                //modifications du style pour les media queries
                 @include tablet {
                     height: auto;
                     padding: 1vw 0;
@@ -108,12 +132,16 @@
                     padding: 2vw 0;
                 }
 
+                //composant des tags
                 .tags{
+                    //modifications du style pour les media queries
                     @include mobile{
                         gap: 2.5vw;
                     }
 
+                    //tag unitaire
                     .tags-unit{
+                        //modifications du style pour les media queries
                         @include tablet {
                             font-size: $font-size-tb-small;
                             height: 2.6vw;
@@ -133,21 +161,27 @@
                 }
             }
             
+            //zone notation du logement
             &__rate{
+                //modifications du style pour les media queries
                 @include mobile{
                     grid-area: 4 / 1 / 4 / 2;
                     height: auto;
                     padding: 2vw 0 3vw;
                }
 
+               //composant etoiles
                .rate-stars{
+                    //modifications du style pour les media queries
                     @include mobile{
                         width: 26.1vw;
                         height: 8.8vw;
                         justify-content: left;
                     }
                     
+                    //étoile
                     i {
+                        //modifications du style pour les media queries
                         @include mobile{
                             display: flex;
                             font-size: 3.4vw;
@@ -158,14 +192,17 @@
                }
             }
             
+            //zone informations propriétaire
             &__host{
+                //modifications du style pour les media queries
                 @include mobile{
                     grid-area: 4 / 2 / 4 / 3;
                     height: auto;
                     padding: 2vw 0 3vw;
                 }
-                
+                //composant informations propriétaire
                 .Host{
+                    //modifications du style pour les media queries
                     @include mobile{
                         display: flex;
                         flex-wrap: wrap;
