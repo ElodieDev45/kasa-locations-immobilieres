@@ -1,3 +1,4 @@
+//creation composant Bannière
 function Banner({title}) {
     return (
       <div className='Banner'>

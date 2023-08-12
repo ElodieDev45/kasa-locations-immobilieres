@@ -1,5 +1,7 @@
+//import images
 import logo from '../../assets/logo-blanc.png'
 
+//création du pied de page de tout le site
 function Footer() {
   return (
     <div className='Footer'>

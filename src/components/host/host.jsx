@@ -1,3 +1,4 @@
+//création du composant regroupant les données du propriétaire
 function Host({datasid, name, picture}){
     return(
         <div 

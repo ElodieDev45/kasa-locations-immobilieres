@@ -1,3 +1,4 @@
+//creation du composant de notation du logement sur 5 étoiles
 function Rate({datasid, rating}){
     return (
         <div className="rate-stars" key={datasid}>

@@ -1,4 +1,5 @@
-function ErrorComponent({errorNumber, errorText, altImg}) {
+//affichage code et information d'erreur
+function ErrorComponent({errorNumber, errorText}) {
     return (
         <div className='error-component'>
             <div className="error-body">

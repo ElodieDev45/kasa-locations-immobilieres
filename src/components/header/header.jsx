@@ -1,12 +1,16 @@
-import logo from '../../assets/logo.png'
+//import fonctions spéciales React (hook)
 import { NavLink } from 'react-router-dom';
+//import images
+import logo from '../../assets/logo.png'
 
+//création de l'entête générale du site
 function Header() {
     return (
         <div className='Header'>
             <img src={logo} alt='logo Kasa' className='Header-logo' />
             <nav className='Header-nav'>
                 <ul>
+                    {/* utilisation de NavLink pour la getsion simplifiée des liens de navigation du site et de leur état */}
                     <li>
                         <NavLink 
                           to="../../" className={({ isActive, isPending }) =>
