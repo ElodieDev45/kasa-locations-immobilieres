@@ -1,3 +1,6 @@
+//style pour la carte logement unitaire
+
+//dimensionnement
 .Card {
     position: relative;
     width: 24vw;
@@ -5,7 +8,7 @@
     height: 24vw;
     max-height: 340px;
 
-
+    //filtre d'opacité dégradé: dimensionnement et positionnement
     &::before {
         content: "";
         position: absolute;
@@ -20,6 +23,7 @@
 
     }
 
+    //image positionnement et dimmensionnement
     &-cover {
         width: 100%;
         height: 100%;
@@ -28,6 +32,7 @@
         border-radius: $radius-midi;
     }
 
+    //style, dimension et position du nom du logement
     h3{
         font-weight: $font-medium;
         font-size: $font-size-large;

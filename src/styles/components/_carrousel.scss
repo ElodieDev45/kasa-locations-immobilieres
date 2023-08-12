@@ -1,3 +1,6 @@
+//styles du Carrousel
+
+//positionnement et dimmensions du carrousel
 .carrousel {
     position: relative;
     z-index: 0;
@@ -7,6 +10,7 @@
     height: 100%;
     margin: 0;
     
+    //styles de l'image affichée
     &-pct {
         position: absolute;
         z-index: 0;
@@ -18,6 +22,7 @@
         border-radius: $radius-regular;
     }
 
+    //style des boutons de navigation et du compteur
     &-slider {
         position: absolute;
         z-index: 1;
@@ -27,6 +32,7 @@
         height: 100%;
         margin: 0;
         
+        //bouton Précédent
         #previous {
             background-color: $quintenary-color;
             padding: 0;
@@ -38,6 +44,7 @@
             }
         } 
 
+        //bouton Suivant
         #next {
             background-color: $quintenary-color;
             padding: 0;
@@ -49,6 +56,7 @@
             }
         }
 
+        //style du compteur
         &__index {
             color: $secondary-color;
             font-size: $font-size-large;

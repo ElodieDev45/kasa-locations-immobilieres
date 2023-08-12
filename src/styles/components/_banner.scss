@@ -1,3 +1,6 @@
+//styles de base de la bannière
+
+//dimensionnement et positionnement
 .Banner {
     position: relative;
     display: flex;
@@ -7,6 +10,7 @@
     height: 100%;
     border-radius: $radius-regular;
 
+    //style filtre d'opacité, positionnement et dimensionnement
     &::after {
         content: "";
         position: absolute;
@@ -22,6 +26,7 @@
         }
     }
 
+    //style du texte de la bannière
     h1 {
         position: absolute;
         z-index: 1;

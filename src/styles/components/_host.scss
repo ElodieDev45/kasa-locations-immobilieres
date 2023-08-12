@@ -1,3 +1,6 @@
+//style des informations propriétaire
+
+//dimensionnement et positionnement de l'ensemble Host
 .Host {
     display: flex;
     justify-content: right;
@@ -8,6 +11,7 @@
     width: 100%;
     height: 100%;
     
+    //nom du propriétaire : style, césure, position et taille
     &-name {
         margin: 0;
         padding: 0;
@@ -19,10 +23,12 @@
         font-weight: $font-medium;
     }
     
+    //style de la photo du propriétaire
     &-img {
         margin: 0;
         padding: 0;
         
+        //dimmensionnement de l'image
         img {
             margin: 0;
             padding: 0;
@@ -34,4 +40,3 @@
         }
     }
 }
-    

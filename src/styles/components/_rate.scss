@@ -1,3 +1,6 @@
+//style des étoiles de notation
+
+//dimensionnement et positionnement
 .rate-stars {
     display: flex;
     justify-content: flex-end;
@@ -11,15 +14,18 @@
         margin: 0;
         height: 100%;
 
+        //dimension des étoiles
         i {
             font-size: 1.5vw;
             padding: 0.5vw 0.4vw;
         }
 
+        //couleur des étoiles actives
         &.active{
             color: $primary-color;
         }
 
+        //couleur des étoiles inactives
         &.pending{
             color: $tertiary-color-stars;
         }

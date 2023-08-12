@@ -1,3 +1,6 @@
+//style des listes déroulantes dropdown
+
+//dimensionnement et positionnement du dropdown
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -6,6 +9,7 @@
     margin: 0;
     padding: 0;
 
+    //dimension et position du bouton
     &-button {
         position: relative;
         display: flex;
@@ -19,6 +23,7 @@
         width: 100%;
     }
     
+    //style de la barre d'intitulé
     &-menu {
         background-color: $primary-color;
         display: flex;
@@ -29,6 +34,7 @@
         margin: 0;
         padding: 0;
         
+        //style du titre
         h2 {
             color: $secondary-color;
             font-weight: $font-medium;
@@ -39,6 +45,7 @@
         }
     }
 
+    //ensemble des images d'ouverture et fermeture du bouton
     &-menuImg {
         display: flex;
         justify-content: center;
@@ -47,11 +54,13 @@
         height: 62%;
     }
 
+    //style et position des images 
     &-img {
         background-color: $primary-color;
         position: absolute;
         height: 100%;
         
+        //position image Ouverture
         &.one {
             z-index: 1;
     
@@ -59,7 +68,7 @@
                 z-index: 0;
             }
         }
-        
+        //position image Fermeture
         &.two {
             z-index: 0;
     
@@ -69,6 +78,7 @@
         }
     }
 
+    //dimensionnement et positionnement du contenu
     &-content {
         font-weight: $font-regular;
         background-color: $tertiary-color;
@@ -80,6 +90,7 @@
         width: 100%;
         min-height: 17.3vw;
         
+        //style des listes
         ul {
             margin: 0;
             padding: 2.5vw 1.5vw 2vw;
@@ -88,6 +99,7 @@
             height: min-content;
         }
         
+        //style du texte
         p {
             padding: 2.5vw 1.5vw 1.5vw;
             margin: 0;
@@ -96,5 +108,3 @@
         }
     }
 }
-
-

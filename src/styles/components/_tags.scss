@@ -1,3 +1,6 @@
+//style des mots clés du logement
+
+//ensemble des tags : dimensionnement et positionnement
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +12,7 @@
     width: 100%;
     font-size: $font-size-medium-small;
     
+    //tag unitaire : style, positionnement et dimensionnement
     &-unit {
         display: flex;
         justify-content: center;
