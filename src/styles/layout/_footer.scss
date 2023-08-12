@@ -1,3 +1,6 @@
+//styles du pied de page
+
+//positionnement et dimensionnement
 .Footer{
     display: flex;
     flex-direction: column;
@@ -7,6 +10,7 @@
     height: 100%;
     background-color: $quaternary-color;
 
+    //modifications du style pour les media queries
     @include mobile {
         justify-content: center;
     }
@@ -15,10 +19,12 @@
         max-height: 254px;
     }
 
+    //dimensionnement du logo
     &-logo{
         margin: 1vw;
         width: 8.5vw;
 
+        //modifications du style pour les media queries
         @include mobile {
             width: 32.6vw;
             margin: 0;
@@ -31,6 +37,7 @@
         }
     }
     
+    //texte des droits : style, dimension, position
     &-AllRights {
         display: flex;
         justify-content: center;
@@ -41,6 +48,7 @@
         height: 3.2vw;
         margin: 1vw 0 2vw;
 
+        //modifications du style pour les media queries
         @include tablet {
             font-size: $font-size-tb-extra-large;
         }

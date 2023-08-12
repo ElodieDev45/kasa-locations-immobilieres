@@ -1,3 +1,6 @@
+//styles de l'en-tête du site
+
+//dimmensionnement et positionnement
 .Header {
     display: flex;
     flex-direction: row;
@@ -6,6 +9,7 @@
     margin: 3vw auto 1.2vw;
     height: 4.75vw;
     
+    //modifications du style pour les media queries
     @include mobile{
         height: 12.5vw;
         margin: 5vw auto 21px;
@@ -16,10 +20,12 @@
         margin: 53px auto 21px;
     }
     
+    //dimensionnement du logo
     &-logo {
         width: 14.6vw;
         height: 100%;
 
+    //modifications du style pour les media queries
         @include mobile{
             width: 38.7vw;
         }
@@ -29,16 +35,18 @@
             max-height: 83px;
         }
     }
-      
+    
+    //menu de navigation : style et dimensionnement
     &-nav {
         width: 40%;
         color: $primary-color;
 
+        //modifications du style pour les media queries
         @include mobile {
             width: 55%;
         }
 
-        
+        //positionnement de la liste de navigation
         ul {
             display: flex;
             flex-direction: row;
@@ -47,10 +55,12 @@
             list-style-type: none;
         }
         
+        //style de chaque menu
         li {
             font-size: $font-size-extra-large;
             white-space : nowrap;
 
+            //modifications du style pour les media queries
             @include tablet {
                 font-size: $font-size-tb-extra-large;
             }
@@ -64,15 +74,18 @@
                 font-size: $font-size-max-extra-large;
             }
 
+            //style des liens de navigation
             a{
                 text-decoration: none;
                 color: $primary-color;
 
+                //style lien actif
                 &.active {
                     color: $primary-color;
                     text-decoration-line: underline;
                 }
-        
+                
+                //style lien inactif
                 &.pending {
                     text-decoration: none;
                     color: $primary-color;

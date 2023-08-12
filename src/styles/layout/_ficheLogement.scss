@@ -1,11 +1,16 @@
+//styles de la fiche logement
+
+//taille globale
 .ficheLogement {
     width: 100%;
 
+    //dimensions du Carrousel
     &-carrousel {
         margin: 0;
         height: 29vw;
     }
 
+    //en-tête de la fiche, structure et dimmensionnement
     &-head {
         display: grid;
         align-items: start;
@@ -13,6 +18,7 @@
         grid-template-rows: auto auto auto;
         margin: 1vw 0 1.4vw 0;
         
+        //nom du logement : position, dimension et style
         &__name {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -26,6 +32,7 @@
             // white-space : nowrap;
         }
 
+        //localisation du logement : position, dimension et style
         &__location {
             grid-row-start: 2;
             grid-row-end: 3;
@@ -38,6 +45,7 @@
             font-size: $font-size-large;
         }
 
+        //infos propriétaire : positionnement
         &__host {
             margin: 0;
             grid-row-start: 1;
@@ -46,6 +54,7 @@
             grid-column-end: 3;
         }
 
+        //mots clés : positionnement
         &__tags {
             grid-area: 3;
             width: 70%;
@@ -55,6 +64,7 @@
             align-self: flex-end;
         }
 
+        //Etoiles de notation : positionnement
         &__rate {
             grid-row-start: 3;
             grid-row-end: 4;
@@ -65,15 +75,16 @@
         }
     }
 
+    //détails du logement : dimensionnement et positionnement
     &-details {
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 3vw;
 
+        //largeur du dropdown
         &__dropdown {
             width: 47%;
         }
     }
-
 }
