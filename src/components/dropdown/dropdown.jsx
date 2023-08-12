@@ -1,12 +1,16 @@
+//import fonctions spéciales React (hook)
 import { useState } from 'react'
+//import images
 import foldImg from '../../assets/fold.png'
 import unfoldImg from '../../assets/unfold.png'
 
 function Dropdown({datasid, title, content}) {
+    //etat d'ouverture du dropdown : par défaut fermé
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <article key={datasid} className={`dropdown ${isOpen ? 'active' : ''}`} id={title}>
+        //button menu à cliquer
+        <div key={datasid} className={`dropdown ${isOpen ? 'active' : ''}`} id={title}>
             <button onClick={() => setIsOpen(!isOpen)} className='dropdown-button'>
                 <div className='dropdown-menu'>
                     <h2>{title}</h2>
@@ -17,8 +21,10 @@ function Dropdown({datasid, title, content}) {
                 </div>
 
                 {isOpen && (
+                //lorsque le menu est Ouvert
                 <div className='dropdown-content'>
                     {Array.isArray(content) ? (
+                    //si c'est un tableau : liste
                         <ul>
                             {content.map((equipment, index) =>(
                                 <li key={index}>
@@ -27,13 +33,14 @@ function Dropdown({datasid, title, content}) {
                             ))}
                         </ul>
                     ) : (
+                    //sinon : texte
                         <p className='dropdown-datas'>{content}</p>
                     )
                     }           
                 </div>
                 )}
             </button>
-        </article>
+        </div>
     )
 }
 
