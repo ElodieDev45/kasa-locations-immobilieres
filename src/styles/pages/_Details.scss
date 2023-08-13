@@ -48,6 +48,10 @@
                         @include mobile{
                             display: none;
                         }
+
+                        @include tablet{
+                            font-size: $font-size-tb-large;
+                        }
                     }
                 }
             }
