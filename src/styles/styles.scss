@@ -9,10 +9,9 @@
 @import 'base/base';
 @import 'base/typographie';
 
-//import des styles de mise en page
+//import des dispositions
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/ficheLogement';
 
 //import des styles de composants
 @import 'components/banner';
@@ -23,6 +22,7 @@
 @import 'components/host';
 @import 'components/rate';
 @import 'components/tags';
+@import 'components/ficheLogement';
 
 //import des styles de pages
 @import 'pages/Home';
