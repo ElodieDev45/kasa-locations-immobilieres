@@ -1,7 +1,7 @@
 //creation composant Bannière
 function Banner({title}) {
     return (
-      <div className='Banner'>
+      <div className='banner'>
         <h1>{title}</h1>
       </div>
     );

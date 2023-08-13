@@ -3,12 +3,12 @@ function Host({datasid, name, picture}){
     return(
         <div 
             key={datasid}
-            className="Host"
+            className="host"
         >
-            <p className='Host-name'>
+            <p className='host-name'>
                 {name}
             </p>
-            <div className='Host-img'>
+            <div className='host-img'>
                 <img 
                     src={picture}
                     alt={`profil de ${name}`}

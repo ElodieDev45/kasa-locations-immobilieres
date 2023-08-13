@@ -3,13 +3,13 @@ function Card({datasid, titleCard, coverCard}) {
     return (
       <li 
         key={datasid}
-        className='Card'
+        className='card'
       >
         <h3>
           {titleCard}
         </h3>
         <img 
-          className='Card-cover'
+          className='card-cover'
           src={coverCard}
           alt={`${titleCard}-cover`}
         />

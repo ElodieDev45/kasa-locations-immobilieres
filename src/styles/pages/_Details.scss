@@ -205,7 +205,7 @@
                     padding: 2vw 0 3vw;
                 }
                 //composant informations propriétaire
-                .Host{
+                .host{
                     //modifications du style pour les media queries
                     @include mobile{
                         display: flex;

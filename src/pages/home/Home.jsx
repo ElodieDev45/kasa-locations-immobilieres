@@ -14,13 +14,13 @@ function Home() {
                 {/* intégration de l'en-tête */}
                 <Header />
             </header>
-            <section className='Home-banner'>
+            <section className='home-banner'>
                 {/* intégration du composant de la bannière image (image en background SCSS) */}
                 <Banner 
                     title={'Chez vous, partout et ailleurs'}
                 />
             </section>
-            <main className='Cards'>
+            <main className='cards'>
                 <ul>
                     {logements.map((item) => (
                     //parcours des données du fichier

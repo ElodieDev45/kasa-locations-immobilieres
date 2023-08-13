@@ -2,7 +2,7 @@
 
 #Home{
     //largeur en-tête et bannière
-    header, .Home-banner{
+    header, .home-banner{
         width: 86%;
         margin: 0 auto;
 
@@ -13,7 +13,7 @@
     }
 
     //bannière : dimmensionnement
-    .Home-banner{
+    .home-banner{
         padding: 2vw 0 3vw;
         height: 15.5vw;
 
@@ -52,7 +52,7 @@
         }
         
         //image bannière : import, positionnement et dimensionnement
-        .Banner {
+        .banner {
             background-image: $imgBanner-home-desktop;
             background-size: 100%;
             background-position: center;
@@ -68,7 +68,7 @@
     }
 
     //liste des logements : style, dimensionnement
-    .Cards {
+    .cards {
         background-color: $tertiary-color;
         width: 86%;
         margin: 0 auto 4vw;
@@ -127,7 +127,7 @@
             }
 
             //vignette logement unitaire
-            .Card {
+            .card {
                 //modifications du style pour les media queries
                 @include mobile{
                     width: 100%;
