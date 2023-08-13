@@ -2,14 +2,13 @@
 
 // Couleurs
 $primary-color: #FF6060;
-$secondary-color:#ffffff;
+$secondary-color:#000000;
 $tertiary-color: #F6F6F6;
 $tertiary-color-stars: #E3E3E3;
 $quaternary-color:#000000;
-$quaternary-color-gradient: rgba(0, 0, 0, 0.5);
-$quaternary-color-bkg: rgba(0, 0, 0, 0.3);
+$quaternary-color-gradient : rgba(0, 0, 0, 0.5);
+$quaternary-color-bkg :rgba(0, 0, 0, 0.3);
 $quintenary-color: transparent;
-$body-color: #ffffff;
 
 //Dégradé
 $linear-gradient-color: linear-gradient(to bottom, $quintenary-color, $quaternary-color-gradient);
