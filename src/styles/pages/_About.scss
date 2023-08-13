@@ -30,13 +30,13 @@
 
         //image bannière background : import, dimmension et position
         .Banner {
-            background-image: url('../../assets/banner-about-desktop.avif');
+            background-image: $imgBanner-about-desktop;
             background-size: cover;
             background-position: center;
         
             //modifications image et style pour les media queries
             @include mobile {
-                background-image: url('../../assets/banner-about-mobile.avif');
+                background-image: $imgBanner-about-mobile;
                 border-radius: $radius-midi;            
             }
         }

@@ -53,12 +53,13 @@
         
         //image bannière : import, positionnement et dimensionnement
         .Banner {
-            background-image: url('../../assets/banner-home-desktop.avif');
+            background-image: $imgBanner-home-desktop;
             background-size: 100%;
             background-position: center;
         
             //modifications du style pour les media queries
             @include mobile{
+                background-image: $imgBanner-home-mobile;
                 background-size: 180%;
                 background-position: center;
                 border-radius: $radius-midi;
