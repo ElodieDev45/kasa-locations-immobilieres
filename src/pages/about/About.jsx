@@ -1,6 +1,6 @@
 //import des composants
-import Header from '../../components/header/header'
-import Footer from '../../components/footer/footer'
+import Header from '../../layout/header/header'
+import Footer from '../../layout/footer/footer'
 import Banner from '../../components/banner/banner'
 import Dropdown from '../../components/dropdown/dropdown'
 //import fichier de données au format JSON

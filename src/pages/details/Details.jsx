@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 //import fichier de données au format JSON
 import datasLogements from '../../datas/logements.json'
 //import composants
-import Header from '../../components/header/header'
+import Header from '../../layout/header/header'
 import FicheLogement from '../../components/ficheLogement/ficheLogement'
-import Footer from '../../components/footer/footer'
+import Footer from '../../layout/footer/footer'
 
 function Details() {
     //const pour permettre la navigation vers une autre page

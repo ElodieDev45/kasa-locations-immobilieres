@@ -1,6 +1,6 @@
 //import des composants
-import Header from '../../components/header/header'
-import Footer from '../../components/footer/footer'
+import Header from '../../layout/header/header'
+import Footer from '../../layout/footer/footer'
 import ErrorComponent from '../../components/errorComponent/errorComponent'
 
 //affichage page d'erreur code HTTP 404

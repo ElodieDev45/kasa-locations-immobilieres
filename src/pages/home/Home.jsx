@@ -1,10 +1,10 @@
 //import fichier de données au format json
 import logements from '../../datas/logements.json'
 //import composants
-import Header from '../../components/header/header'
+import Header from '../../layout/header/header'
 import Banner from '../../components/banner/banner'
 import Card from '../../components/card/card'
-import Footer from '../../components/footer/footer'
+import Footer from '../../layout/footer/footer'
 
 
 function Home() {
