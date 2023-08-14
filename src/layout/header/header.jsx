@@ -1,4 +1,4 @@
-//import fonctions spéciales React (hook)
+//import composant react router dom de navigation
 import { NavLink } from 'react-router-dom';
 //import images
 import logo from '../../assets/logo.png'

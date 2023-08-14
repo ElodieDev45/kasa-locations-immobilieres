@@ -1,3 +1,5 @@
+//import composant lien de navigation "react-router-dom"
+import { Link } from 'react-router-dom';
 //import fichier de données au format json
 import logements from '../../datas/logements.json'
 //import composants
@@ -24,14 +26,14 @@ function Home() {
                 <ul>
                     {logements.map((item) => (
                     //parcours des données du fichier
-                        <a href={'/details/'+ item.id} key={item.id}>
+                        <Link to={`/details/${item.id}`} key={item.id}>
                             {/* intégration du composant de logement unitaire */}
                             <Card 
                                 datasid={item.id}
                                 titleCard={item.title}
                                 coverCard={item.cover}
                             />
-                        </a>
+                        </Link>
                     ))}
                 </ul>
             </main>
