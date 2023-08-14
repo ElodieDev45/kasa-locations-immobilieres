@@ -48,7 +48,7 @@ function Details() {
                     //ajout d'un tableau "sections" évolutif pour catégories des dropdown
                     sections={[
                         {title: 'Description', content: logementInfos.description},
-                        {title: 'Équipements', content: logementInfos.equipments.join(', ')}
+                        {title: 'Équipements', content: logementInfos.equipments}
                     ]}
                 />
             </main>
