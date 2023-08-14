@@ -17,7 +17,7 @@ function Home() {
             <section className='home-banner'>
                 {/* intégration du composant de la bannière image (image en background SCSS) */}
                 <Banner 
-                    title={'Chez vous, partout et ailleurs'}
+                    title={'Chez vous,\n partout et ailleurs'}
                 />
             </section>
             <main className='cards'>

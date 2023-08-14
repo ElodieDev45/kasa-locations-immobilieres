@@ -39,8 +39,8 @@
             }
 
             @include mobile{
-                width: 68%;
                 text-align: left;
+                white-space: pre-line;
                 font-size: $font-size-mb-biggest;
                 left: 3vw;
                 line-height: $text-line-height-3;
