@@ -33,9 +33,16 @@ Démarrer le projet React et développer l’ensemble de l’application :
 
 Ce projet a été démarré avec [Create React App](https://github.com/facebook/create-react-app).
 
-#### **Scripts disponibles**
+### **Scripts à executer en premier lieux**
 
-Dans le répertoire du projet, vous pouvez exécuter :
+Dans le répertoire du projet, vous devez exécuter :
+#### **`npm install`**
+
+En premier lieux, afin d'installer les dépendances nécessaires pour le bon fonctionnement de l'application.
+
+Exécutez simplement "npm install".
+
+Une fois l'installation terminée, l'application sera prête à être exécutée en utilisant la commande npm start.
 
 #### **`npm start`**
 
@@ -45,6 +52,9 @@ Ouvrir [http://localhost:3000](http://localhost:3000) pour l’afficher dans vot
 La page se recharge lorsque vous apportez des modifications.\
 Vous pouvez également voir des "lint errors" dans la console.
 
+### **Autres Scripts disponibles**
+
+Dans le répertoire du projet, vous pouvez exécuter :
 #### **`npm test`**
 
 LLance l’exécuteur de test en mode de montre interactive.\
