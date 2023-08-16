@@ -29,11 +29,13 @@ Démarrer le projet React et développer l’ensemble de l’application :
 .    
 ## Instructions de démarrage 
 
+(attention, Node.js doit être déjà installé sur votre machine ou être installé avant de débuter)
 #### **Prise en main de Create React App**
 
 Ce projet a été démarré avec [Create React App](https://github.com/facebook/create-react-app).
 
 ### **Scripts à executer en premier lieux**
+
 
 Dans le répertoire du projet, vous devez exécuter :
 #### **`npm install`**
